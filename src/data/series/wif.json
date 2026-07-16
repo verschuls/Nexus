@@ -1,0 +1,227 @@
+{
+  "title": "What If...?",
+  "releaseDate": "11.08.2021",
+  "inUniverseTime": "Multiverse",
+  "tier": "recommended",
+  "state": "Alternate Universe",
+  "notes": "Animated anthology of alternate timelines.",
+  "description": "The Watcher observes alternate versions of MCU events across the multiverse.",
+  "runtimePerEp": 32,
+  "timetravel": true,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "What If... Captain Carter Were the First Avenger?",
+        "releaseDate": "11.08.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 2,
+        "title": "What If... T'Challa Became a Star-Lord?",
+        "releaseDate": "18.08.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 3,
+        "title": "What If... the World Lost Its Mightiest Heroes?",
+        "releaseDate": "25.08.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 4,
+        "title": "What If... Doctor Strange Lost His Heart Instead of His Hands?",
+        "releaseDate": "01.09.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 5,
+        "title": "What If... Zombies?!",
+        "releaseDate": "08.09.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 6,
+        "title": "What If... Killmonger Rescued Tony Stark?",
+        "releaseDate": "15.09.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 7,
+        "title": "What If... Thor Were an Only Child?",
+        "releaseDate": "22.09.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 8,
+        "title": "What If... Ultron Won?",
+        "releaseDate": "29.09.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 9,
+        "title": "What If... the Watcher Broke His Oath?",
+        "releaseDate": "06.10.2021",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "What If... Nebula Joined the Nova Corps?",
+        "releaseDate": "22.12.2023",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 2,
+        "title": "What If... Peter Quill Attacked Earth's Mightiest Heroes?",
+        "releaseDate": "23.12.2023",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 3,
+        "title": "What If... Happy Hogan Saved Christmas?",
+        "releaseDate": "24.12.2023",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 4,
+        "title": "What If... Iron Man Crashed into the Grandmaster?",
+        "releaseDate": "25.12.2023",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 5,
+        "title": "What If... Captain Carter Fought the Hydra Stomper?",
+        "releaseDate": "26.12.2023",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 6,
+        "title": "What If... Kahhori Reshaped the World?",
+        "releaseDate": "27.12.2023",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 7,
+        "title": "What If... Hela Found the Ten Rings?",
+        "releaseDate": "28.12.2023",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 8,
+        "title": "What If... the Avengers Assembled in 1602?",
+        "releaseDate": "29.12.2023",
+        "inUniverseTime": "1602 / Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 9,
+        "title": "What If... Strange Supreme Intervened?",
+        "releaseDate": "30.12.2023",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      }
+    ],
+    "3": [
+      {
+        "id": 1,
+        "title": "What If... the Hulk Fought the Mech Avengers?",
+        "releaseDate": "22.12.2024",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 2,
+        "title": "What If... Agatha Went to Hollywood?",
+        "releaseDate": "23.12.2024",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 3,
+        "title": "What If... the Red Guardian Stopped the Winter Soldier?",
+        "releaseDate": "24.12.2024",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 4,
+        "title": "What If... Howard the Duck Got Hitched?",
+        "releaseDate": "25.12.2024",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 5,
+        "title": "What If... the Emergence Destroyed the Earth?",
+        "releaseDate": "26.12.2024",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 6,
+        "title": "What If... 1872?",
+        "releaseDate": "27.12.2024",
+        "inUniverseTime": "1872 / Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 7,
+        "title": "What If... the Watcher Disappeared?",
+        "releaseDate": "28.12.2024",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 8,
+        "title": "What If... What If?",
+        "releaseDate": "29.12.2024",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Agents of S.H.I.E.L.D.: Slingshot",
+  "releaseDate": "13.12.2016",
+  "inUniverseTime": "Late 2016",
+  "tier": "completionist",
+  "state": "Reality",
+  "notes": "Digital web-series spin-off; events take place between Agents of S.H.I.E.L.D. seasons 3 and 4.",
+  "description": "Agent Elena 'Yo-Yo' Rodriguez pursues a personal vendetta while adjusting to the Sokovia Accords.",
+  "runtimePerEp": 4,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Vendetta",
+        "releaseDate": "13.12.2016",
+        "inUniverseTime": "Late 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "John Hancock",
+        "releaseDate": "13.12.2016",
+        "inUniverseTime": "Late 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Progress",
+        "releaseDate": "13.12.2016",
+        "inUniverseTime": "Late 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Reunion",
+        "releaseDate": "13.12.2016",
+        "inUniverseTime": "Late 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Deal Breaker",
+        "releaseDate": "13.12.2016",
+        "inUniverseTime": "Late 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Justicia",
+        "releaseDate": "13.12.2016",
+        "inUniverseTime": "Late 2016",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

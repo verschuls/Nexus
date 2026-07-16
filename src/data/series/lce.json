@@ -1,0 +1,225 @@
+{
+  "title": "Luke Cage",
+  "releaseDate": "30.09.2016",
+  "inUniverseTime": "11.2015 - 09.2017",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "Part of the Defenders Saga.",
+  "description": "Luke Cage protects Harlem while navigating crime, power, and his public identity.",
+  "runtimePerEp": 55,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Moment of Truth",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Code of the Streets",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Who's Gonna Take the Weight?",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Step in the Arena",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "Just to Get a Rep",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Suckas Need Bodyguards",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Manifest",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "30.11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "Blowin' Up the Spot",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "01.12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "DWYCK",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "01.12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "Take It Personal",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "02.12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "Now You're Mine",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "02.12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "Soliloquy of Chaos",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "02.12.2015 - 03.12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "You Know My Steez",
+        "releaseDate": "30.09.2016",
+        "inUniverseTime": "03.12.2015",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "Soul Brother #1",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Straighten It Out",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Wig Out",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "I Get Physical",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "All Souled Out",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "28.08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "The Basement",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "28.08.2017 - 29.08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "On and On",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "29.08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "If It Ain't Rough, It Ain't Right",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "30.08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "For Pete's Sake",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "30.08.2017 - 31.08.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "The Main Ingredient",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "03.09.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "The Creator",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "03.09.2017 - 04.09.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "Can't Front on Me",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "04.09.2017 - 05.09.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "They Reminisce Over You (T.R.O.Y.)",
+        "releaseDate": "22.06.2018",
+        "inUniverseTime": "09.2017",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ]
+  }
+}

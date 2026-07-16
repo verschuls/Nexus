@@ -1,0 +1,63 @@
+{
+  "title": "Ironheart",
+  "releaseDate": "24.06.2025",
+  "inUniverseTime": "10.2025",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "",
+  "description": "Riri Williams returns to Chicago and builds new armor while facing magic and ambition.",
+  "runtimePerEp": 45,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Take Me Home",
+        "releaseDate": "24.06.2025",
+        "inUniverseTime": "10.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Will The Real Natalie Please Stand Up",
+        "releaseDate": "24.06.2025",
+        "inUniverseTime": "10.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "We In Danger, Girl",
+        "releaseDate": "24.06.2025",
+        "inUniverseTime": "10.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Bad Magic",
+        "releaseDate": "01.07.2025",
+        "inUniverseTime": "10.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Karma's a Glitch",
+        "releaseDate": "01.07.2025",
+        "inUniverseTime": "10.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "The Past Is the Past",
+        "releaseDate": "01.07.2025",
+        "inUniverseTime": "10.2025",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

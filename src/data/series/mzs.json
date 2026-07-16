@@ -1,0 +1,47 @@
+{
+  "title": "Marvel Zombies",
+  "releaseDate": "24.09.2025",
+  "inUniverseTime": "Alternate timeline",
+  "tier": "optional",
+  "state": "Alternate Universe",
+  "notes": "Continuation of the zombie branch from What If...?",
+  "description": "Survivors cross a zombie-ravaged alternate Earth to find a cure.",
+  "runtimePerEp": 34,
+  "timetravel": true,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Episode 1",
+        "releaseDate": "24.09.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 2,
+        "title": "Episode 2",
+        "releaseDate": "24.09.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 3,
+        "title": "Episode 3",
+        "releaseDate": "24.09.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 4,
+        "title": "Episode 4",
+        "releaseDate": "24.09.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      }
+    ]
+  }
+}

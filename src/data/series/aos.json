@@ -1,0 +1,1124 @@
+{
+  "title": "Agents of S.H.I.E.L.D.",
+  "releaseDate": "24.09.2013",
+  "inUniverseTime": "11.09.2013 - Fall 1983 - Mid-2019",
+  "tier": "optional",
+  "state": "Reality",
+  "notes": "Marvel Television series. Fandom timeline marks season 7 time-travel branch episodes as Alternate Universe.",
+  "description": "Phil Coulson leads a S.H.I.E.L.D. team through Hydra, Inhumans, space, time travel, and alternate-timeline conflicts.",
+  "runtimePerEp": 43,
+  "timetravel": true,
+  "perSeasonTier": {
+    "1": "recommended",
+    "2": "completionist",
+    "3": "completionist",
+    "4": "completionist",
+    "5": "completionist",
+    "6": "completionist",
+    "7": "completionist"
+  },
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Pilot",
+        "releaseDate": "24.09.2013",
+        "inUniverseTime": "11.09.2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "0-8-4",
+        "releaseDate": "01.10.2013",
+        "inUniverseTime": "09.2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "The Asset",
+        "releaseDate": "08.10.2013",
+        "inUniverseTime": "Fall 2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Eye-Spy",
+        "releaseDate": "15.10.2013",
+        "inUniverseTime": "Fall 2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "Girl in the Flower Dress",
+        "releaseDate": "22.10.2013",
+        "inUniverseTime": "Fall 2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "FZZT",
+        "releaseDate": "05.11.2013",
+        "inUniverseTime": "Fall 2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "The Hub",
+        "releaseDate": "12.11.2013",
+        "inUniverseTime": "11.2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "The Well",
+        "releaseDate": "19.11.2013",
+        "inUniverseTime": "11.2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Repairs",
+        "releaseDate": "26.11.2013",
+        "inUniverseTime": "11.2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "The Bridge",
+        "releaseDate": "10.12.2013",
+        "inUniverseTime": "Late 2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "The Magical Place",
+        "releaseDate": "07.01.2014",
+        "inUniverseTime": "Late 2013",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "Seeds",
+        "releaseDate": "14.01.2014",
+        "inUniverseTime": "Early 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "T.R.A.C.K.S.",
+        "releaseDate": "04.02.2014",
+        "inUniverseTime": "02.2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 14,
+        "title": "T.A.H.I.T.I.",
+        "releaseDate": "04.03.2014",
+        "inUniverseTime": "02.2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 15,
+        "title": "Yes Men",
+        "releaseDate": "11.03.2014",
+        "inUniverseTime": "Early 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 16,
+        "title": "End of the Beginning",
+        "releaseDate": "01.04.2014",
+        "inUniverseTime": "15.03.2014 - 18.03.2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 17,
+        "title": "Turn, Turn, Turn",
+        "releaseDate": "08.04.2014",
+        "inUniverseTime": "18.03.2014 - 19.03.2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 18,
+        "title": "Providence",
+        "releaseDate": "15.04.2014",
+        "inUniverseTime": "20.03.2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 19,
+        "title": "The Only Light in the Darkness",
+        "releaseDate": "22.04.2014",
+        "inUniverseTime": "March 20 2014, 21.03.2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 20,
+        "title": "Nothing Personal",
+        "releaseDate": "29.04.2014",
+        "inUniverseTime": "21.03.2014 - 22.03.2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 21,
+        "title": "Ragtag",
+        "releaseDate": "06.05.2014",
+        "inUniverseTime": "23.03.2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 22,
+        "title": "Beginning of the End",
+        "releaseDate": "13.05.2014",
+        "inUniverseTime": "24.03.2014 - 25.03.2014",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "Shadows",
+        "releaseDate": "23.09.2014",
+        "inUniverseTime": "Mid-2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Heavy Is the Head",
+        "releaseDate": "30.09.2014",
+        "inUniverseTime": "Mid-2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Making Friends and Influencing People",
+        "releaseDate": "07.10.2014",
+        "inUniverseTime": "Fall 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Face My Enemy",
+        "releaseDate": "14.10.2014",
+        "inUniverseTime": "Early 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "A Hen in the Wolf House",
+        "releaseDate": "21.10.2014",
+        "inUniverseTime": "Early 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "A Fractured House",
+        "releaseDate": "28.10.2014",
+        "inUniverseTime": "03.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "The Writing on the Wall",
+        "releaseDate": "11.11.2014",
+        "inUniverseTime": "03.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "The Things We Bury",
+        "releaseDate": "18.11.2014",
+        "inUniverseTime": "03.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "...Ye Who Enter Here",
+        "releaseDate": "02.12.2014",
+        "inUniverseTime": "03.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "What They Become",
+        "releaseDate": "09.12.2014",
+        "inUniverseTime": "03.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "Aftershocks",
+        "releaseDate": "03.03.2015",
+        "inUniverseTime": "03.2015 - 04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "Who You Really Are",
+        "releaseDate": "10.03.2015",
+        "inUniverseTime": "04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "One of Us",
+        "releaseDate": "17.03.2015",
+        "inUniverseTime": "04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 14,
+        "title": "Love in the Time of Hydra",
+        "releaseDate": "24.03.2015",
+        "inUniverseTime": "04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 15,
+        "title": "One Door Closes",
+        "releaseDate": "31.03.2015",
+        "inUniverseTime": "04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 16,
+        "title": "Afterlife",
+        "releaseDate": "07.04.2015",
+        "inUniverseTime": "04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 17,
+        "title": "Melinda",
+        "releaseDate": "14.04.2015",
+        "inUniverseTime": "04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 18,
+        "title": "The Frenemy of My Enemy",
+        "releaseDate": "21.04.2015",
+        "inUniverseTime": "04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 19,
+        "title": "The Dirty Half Dozen",
+        "releaseDate": "28.04.2015",
+        "inUniverseTime": "04.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 20,
+        "title": "Scars",
+        "releaseDate": "05.05.2015",
+        "inUniverseTime": "05.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 21,
+        "title": "S.O.S. Part One",
+        "releaseDate": "12.05.2015",
+        "inUniverseTime": "05.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 22,
+        "title": "S.O.S. Part Two",
+        "releaseDate": "12.05.2015",
+        "inUniverseTime": "05.2015",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "3": [
+      {
+        "id": 1,
+        "title": "Laws of Nature",
+        "releaseDate": "29.09.2015",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Purpose in the Machine",
+        "releaseDate": "06.10.2015",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "A Wanted (Inhu)man",
+        "releaseDate": "13.10.2015",
+        "inUniverseTime": "Late 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Devils You Know",
+        "releaseDate": "20.10.2015",
+        "inUniverseTime": "12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "4,722 Hours",
+        "releaseDate": "27.10.2015",
+        "inUniverseTime": "05.2015 - 12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Among Us Hide...",
+        "releaseDate": "03.11.2015",
+        "inUniverseTime": "12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Chaos Theory",
+        "releaseDate": "10.11.2015",
+        "inUniverseTime": "12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "Many Heads, One Tale",
+        "releaseDate": "17.11.2015",
+        "inUniverseTime": "12.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Closure",
+        "releaseDate": "01.12.2015",
+        "inUniverseTime": "Early 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "Maveth",
+        "releaseDate": "08.12.2015",
+        "inUniverseTime": "Early 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "Bouncing Back",
+        "releaseDate": "08.03.2016",
+        "inUniverseTime": "03.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "The Inside Man",
+        "releaseDate": "15.03.2016",
+        "inUniverseTime": "03.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "Parting Shot",
+        "releaseDate": "22.03.2016",
+        "inUniverseTime": "03.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 14,
+        "title": "Watchdogs",
+        "releaseDate": "29.03.2016",
+        "inUniverseTime": "04.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 15,
+        "title": "Spacetime",
+        "releaseDate": "05.04.2016",
+        "inUniverseTime": "04.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 16,
+        "title": "Paradise Lost",
+        "releaseDate": "12.04.2016",
+        "inUniverseTime": "04.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 17,
+        "title": "The Team",
+        "releaseDate": "19.04.2016",
+        "inUniverseTime": "04.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 18,
+        "title": "The Singularity",
+        "releaseDate": "26.04.2016",
+        "inUniverseTime": "27.04.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 19,
+        "title": "Failed Experiments",
+        "releaseDate": "03.05.2016",
+        "inUniverseTime": "06.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 20,
+        "title": "Emancipation",
+        "releaseDate": "10.05.2016",
+        "inUniverseTime": "06.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 21,
+        "title": "Absolution",
+        "releaseDate": "17.05.2016",
+        "inUniverseTime": "06.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 22,
+        "title": "Ascension",
+        "releaseDate": "17.05.2016",
+        "inUniverseTime": "06.2016 - 12.2016",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "4": [
+      {
+        "id": 1,
+        "title": "The Ghost",
+        "releaseDate": "20.09.2016",
+        "inUniverseTime": "03.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Meet the New Boss",
+        "releaseDate": "27.09.2016",
+        "inUniverseTime": "03.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Uprising",
+        "releaseDate": "11.10.2016",
+        "inUniverseTime": "03.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Let Me Stand Next to Your Fire",
+        "releaseDate": "18.10.2016",
+        "inUniverseTime": "04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "Lockup",
+        "releaseDate": "25.10.2016",
+        "inUniverseTime": "04.04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "The Good Samaritan",
+        "releaseDate": "01.11.2016",
+        "inUniverseTime": "05.04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Deals With Our Devils",
+        "releaseDate": "29.11.2016",
+        "inUniverseTime": "05.04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "The Laws of Inferno Dynamics",
+        "releaseDate": "06.12.2016",
+        "inUniverseTime": "12.04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Broken Promises",
+        "releaseDate": "10.01.2017",
+        "inUniverseTime": "13.04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "The Patriot",
+        "releaseDate": "17.01.2017",
+        "inUniverseTime": "16.04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "Wake Up",
+        "releaseDate": "24.01.2017",
+        "inUniverseTime": "17.04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "Hot Potato Soup",
+        "releaseDate": "31.01.2017",
+        "inUniverseTime": "04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "BOOM",
+        "releaseDate": "07.02.2017",
+        "inUniverseTime": "04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 14,
+        "title": "The Man Behind the Shield",
+        "releaseDate": "14.02.2017",
+        "inUniverseTime": "04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 15,
+        "title": "Self Control",
+        "releaseDate": "21.02.2017",
+        "inUniverseTime": "04.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 16,
+        "title": "What If...",
+        "releaseDate": "04.04.2017",
+        "inUniverseTime": "05.2017",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 17,
+        "title": "Identity and Change",
+        "releaseDate": "11.04.2017",
+        "inUniverseTime": "05.2017",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 18,
+        "title": "No Regrets",
+        "releaseDate": "18.04.2017",
+        "inUniverseTime": "05.2017",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 19,
+        "title": "All the Madame's Men",
+        "releaseDate": "25.04.2017",
+        "inUniverseTime": "05.2017",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 20,
+        "title": "Farewell, Cruel World!",
+        "releaseDate": "02.05.2017",
+        "inUniverseTime": "05.2017",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 21,
+        "title": "The Return",
+        "releaseDate": "09.05.2017",
+        "inUniverseTime": "05.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 22,
+        "title": "World's End",
+        "releaseDate": "16.05.2017",
+        "inUniverseTime": "05.2017",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "5": [
+      {
+        "id": 1,
+        "title": "Orientation Part One",
+        "releaseDate": "01.12.2017",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 2,
+        "title": "Orientation Part Two",
+        "releaseDate": "01.12.2017",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 3,
+        "title": "A Life Spent",
+        "releaseDate": "08.12.2017",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 4,
+        "title": "A Life Earned",
+        "releaseDate": "15.12.2017",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 5,
+        "title": "Rewind",
+        "releaseDate": "22.12.2017",
+        "inUniverseTime": "05.2017 - 11.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Fun & Games",
+        "releaseDate": "05.01.2018",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 7,
+        "title": "Together or Not at All",
+        "releaseDate": "12.01.2018",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 8,
+        "title": "The Last Day",
+        "releaseDate": "19.01.2018",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 9,
+        "title": "Best Laid Plans",
+        "releaseDate": "26.01.2018",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 10,
+        "title": "Past Life",
+        "releaseDate": "02.02.2018",
+        "inUniverseTime": "2091",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 11,
+        "title": "All the Comforts of Home",
+        "releaseDate": "02.03.2018",
+        "inUniverseTime": "04.12.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "The Real Deal",
+        "releaseDate": "09.03.2018",
+        "inUniverseTime": "05.12.2017 - 06.12.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "Principia",
+        "releaseDate": "16.03.2018",
+        "inUniverseTime": "16.12.2017 - 19.12.2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 14,
+        "title": "The Devil Complex",
+        "releaseDate": "23.03.2018",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 15,
+        "title": "Rise and Shine",
+        "releaseDate": "30.03.2018",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 16,
+        "title": "Inside Voices",
+        "releaseDate": "06.04.2018",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 17,
+        "title": "The Honeymoon",
+        "releaseDate": "13.04.2018",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 18,
+        "title": "All Roads Lead...",
+        "releaseDate": "20.04.2018",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 19,
+        "title": "Option Two",
+        "releaseDate": "27.04.2018",
+        "inUniverseTime": "05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 20,
+        "title": "The One Who Will Save Us All",
+        "releaseDate": "04.05.2018",
+        "inUniverseTime": "05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 21,
+        "title": "The Force of Gravity",
+        "releaseDate": "11.05.2018",
+        "inUniverseTime": "05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 22,
+        "title": "The End",
+        "releaseDate": "18.05.2018",
+        "inUniverseTime": "05.2018",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "6": [
+      {
+        "id": 1,
+        "title": "Missing Pieces",
+        "releaseDate": "10.05.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Window of Opportunity",
+        "releaseDate": "17.05.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Fear and Loathing on the Planet of Kitson",
+        "releaseDate": "24.05.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Code Yellow",
+        "releaseDate": "31.05.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "The Other Thing",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Inescapable",
+        "releaseDate": "21.06.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Toldja",
+        "releaseDate": "28.06.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "Collision Course Part One",
+        "releaseDate": "05.07.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Collision Course Part Two",
+        "releaseDate": "12.07.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "Leap",
+        "releaseDate": "19.07.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "From the Ashes",
+        "releaseDate": "26.07.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "The Sign",
+        "releaseDate": "02.08.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "New Life",
+        "releaseDate": "02.08.2019",
+        "inUniverseTime": "Mid-2019",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "7": [
+      {
+        "id": 1,
+        "title": "The New Deal",
+        "releaseDate": "27.05.2020",
+        "inUniverseTime": "Early 1931",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 2,
+        "title": "Know Your Onions",
+        "releaseDate": "03.06.2020",
+        "inUniverseTime": "Early 1931",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 3,
+        "title": "Alien Commies from the Future!",
+        "releaseDate": "10.06.2020",
+        "inUniverseTime": "21.07.1955",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 4,
+        "title": "Out of the Past",
+        "releaseDate": "17.06.2020",
+        "inUniverseTime": "22.07.1955",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 5,
+        "title": "A Trout in the Milk",
+        "releaseDate": "24.06.2020",
+        "inUniverseTime": "1973",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 6,
+        "title": "Adapt or Die",
+        "releaseDate": "01.07.2020",
+        "inUniverseTime": "04.07.1976",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 7,
+        "title": "The Totally Excellent Adventures of Mack and the D",
+        "releaseDate": "08.07.2020",
+        "inUniverseTime": "21.01.1982 - 09.09.1983",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 8,
+        "title": "After, Before",
+        "releaseDate": "15.07.2020",
+        "inUniverseTime": "09.09.1983 - 10.1983",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 9,
+        "title": "As I Have Always Been",
+        "releaseDate": "22.07.2020",
+        "inUniverseTime": "Unknown",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 10,
+        "title": "Stolen",
+        "releaseDate": "29.07.2020",
+        "inUniverseTime": "Fall 1983",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 11,
+        "title": "Brand New Day",
+        "releaseDate": "05.08.2020",
+        "inUniverseTime": "Fall 1983",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 12,
+        "title": "The End is at Hand",
+        "releaseDate": "12.08.2020",
+        "inUniverseTime": "Fall 1983",
+        "state": "Alternate Universe",
+        "timetravel": true
+      },
+      {
+        "id": 13,
+        "title": "What We're Fighting For",
+        "releaseDate": "12.08.2020",
+        "inUniverseTime": "Fall 1983 - Mid-2019",
+        "state": "Alternate Universe",
+        "timetravel": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Moon Knight",
+  "releaseDate": "30.03.2022",
+  "inUniverseTime": "04.2025",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "",
+  "description": "Steven Grant and Marc Spector are drawn into a conflict involving Egyptian gods.",
+  "runtimePerEp": 47,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "The Goldfish Problem",
+        "releaseDate": "30.03.2022",
+        "inUniverseTime": "04.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Summon the Suit",
+        "releaseDate": "06.04.2022",
+        "inUniverseTime": "04.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "The Friendly Type",
+        "releaseDate": "13.04.2022",
+        "inUniverseTime": "04.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "The Tomb",
+        "releaseDate": "20.04.2022",
+        "inUniverseTime": "04.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Asylum",
+        "releaseDate": "27.04.2022",
+        "inUniverseTime": "04.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Gods and Monsters",
+        "releaseDate": "04.05.2022",
+        "inUniverseTime": "04.2025",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

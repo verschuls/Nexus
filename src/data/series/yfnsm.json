@@ -1,0 +1,95 @@
+{
+  "title": "Your Friendly Neighborhood Spider-Man",
+  "releaseDate": "29.01.2025",
+  "inUniverseTime": "Alternate timeline",
+  "tier": "completionist",
+  "state": "Alternate Universe",
+  "notes": "Marvel Studios Animation series set in an alternate timeline from the main MCU films.",
+  "description": "Peter Parker begins his Spider-Man life in an alternate timeline where Norman Osborn becomes his mentor.",
+  "runtimePerEp": 31,
+  "timetravel": true,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Amazing Fantasy",
+        "releaseDate": "29.01.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 2,
+        "title": "The Parker Luck",
+        "releaseDate": "29.01.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 3,
+        "title": "Secret Identity Crisis",
+        "releaseDate": "05.02.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 4,
+        "title": "Hitting the Big Time",
+        "releaseDate": "05.02.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 5,
+        "title": "The Unicorn Unleashed",
+        "releaseDate": "05.02.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 6,
+        "title": "Duel with the Devil",
+        "releaseDate": "12.02.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 7,
+        "title": "Scorpion Rising",
+        "releaseDate": "12.02.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 8,
+        "title": "Tangled Web",
+        "releaseDate": "12.02.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 9,
+        "title": "Hero or Menace",
+        "releaseDate": "19.02.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      },
+      {
+        "id": 10,
+        "title": "If This Be My Destiny...",
+        "releaseDate": "19.02.2025",
+        "inUniverseTime": "Alternate timeline",
+        "timetravel": true,
+        "state": "Alternate Universe"
+      }
+    ]
+  }
+}

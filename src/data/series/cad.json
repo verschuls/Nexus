@@ -1,0 +1,177 @@
+{
+  "title": "Cloak & Dagger",
+  "releaseDate": "07.06.2018",
+  "inUniverseTime": "February 2017 - November 2017",
+  "tier": "legacy",
+  "state": "Reality",
+  "notes": "Marvel Television series (Freeform).",
+  "description": "New Orleans teens Tandy Bowen and Tyrone Johnson gain linked powers of light and darkness.",
+  "runtimePerEp": 48,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "First Light",
+        "releaseDate": "07.06.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Suicide Sprints",
+        "releaseDate": "07.06.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Stained Glass",
+        "releaseDate": "14.06.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Call/Response",
+        "releaseDate": "21.06.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Princeton Offense",
+        "releaseDate": "28.06.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Funhouse Mirrors",
+        "releaseDate": "05.07.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "Lotus Eaters",
+        "releaseDate": "12.07.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "Ghost Stories",
+        "releaseDate": "19.07.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 9,
+        "title": "Back Breaker",
+        "releaseDate": "26.07.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 10,
+        "title": "Colony Collapse",
+        "releaseDate": "02.08.2018",
+        "inUniverseTime": "February 2017",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "Restless Energy",
+        "releaseDate": "04.04.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "White Lines",
+        "releaseDate": "04.04.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Shadow Selves",
+        "releaseDate": "11.04.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Rabbit Hold",
+        "releaseDate": "18.04.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Alignment Chart",
+        "releaseDate": "25.04.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "B Sides",
+        "releaseDate": "02.05.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "Vikingtown Sound",
+        "releaseDate": "09.05.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "Two Player",
+        "releaseDate": "16.05.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 9,
+        "title": "Blue Note",
+        "releaseDate": "22.05.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 10,
+        "title": "Level Up",
+        "releaseDate": "30.05.2019",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

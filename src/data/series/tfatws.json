@@ -1,0 +1,63 @@
+{
+  "title": "The Falcon and the Winter Soldier",
+  "releaseDate": "19.03.2021",
+  "inUniverseTime": "04.2024 - 06.2024",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "",
+  "description": "Sam Wilson and Bucky Barnes confront the legacy of Captain America after the Blip.",
+  "runtimePerEp": 50,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "New World Order",
+        "releaseDate": "19.03.2021",
+        "inUniverseTime": "04.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "The Star-Spangled Man",
+        "releaseDate": "26.03.2021",
+        "inUniverseTime": "04.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Power Broker",
+        "releaseDate": "02.04.2021",
+        "inUniverseTime": "04.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "The Whole World Is Watching",
+        "releaseDate": "09.04.2021",
+        "inUniverseTime": "04.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Truth",
+        "releaseDate": "16.04.2021",
+        "inUniverseTime": "04.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "One World, One People",
+        "releaseDate": "23.04.2021",
+        "inUniverseTime": "06.2024",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

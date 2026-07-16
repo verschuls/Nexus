@@ -1,0 +1,225 @@
+{
+  "title": "The Punisher",
+  "releaseDate": "17.11.2017",
+  "inUniverseTime": "09.11.2016 - 10.11.2016 - 15.05.2018 - 17.05.2018",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "Part of the Defenders Saga.",
+  "description": "Frank Castle wages a violent campaign against conspiracies and criminals tied to his past.",
+  "runtimePerEp": 53,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "3 AM",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "09.11.2016 - 10.11.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Two Dead Men",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "11.11.2016 - 13.11.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Kandahar",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "14.11.2016 - 15.11.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Resupply",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "15.11.2016 - 17.11.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "Gunner",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "18.11.2016 - 20.11.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "The Judas Goat",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "21.11.2016 - 24.11.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Crosshairs",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "24.11.2016 - 27.11.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "Cold Steel",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "28.11.2016 - 29.11.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Front Toward Enemy",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "06.12.2016 - 12.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "Virtue of the Vicious",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "12.12.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "Danger Close",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "12.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "Home",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "12.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "Memento Mori",
+        "releaseDate": "17.11.2017",
+        "inUniverseTime": "12.2016",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "Roadhouse Blues",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "27.04.2018 - 29.04.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Fight or Flight",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "29.04.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Trouble the Water",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "30.04.2018 - 01.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Scar Tissue",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "01.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "One-Eyed Jacks",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "02.05.2018 - 03.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Nakazat",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "04.05.2018 - 08.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "One Bad Day",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "09.05.2018 - 11.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "My Brother's Keeper",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "11.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Flustercluck",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "12.05.2018 - 13.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "The Dark Hearts of Men",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "13.05.2018 - 15.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "The Abyss",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "15.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "Collision Course",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "15.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "The Whirlwind",
+        "releaseDate": "18.01.2019",
+        "inUniverseTime": "15.05.2018 - 17.05.2018",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ]
+  }
+}

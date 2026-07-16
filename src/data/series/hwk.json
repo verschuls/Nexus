@@ -1,0 +1,63 @@
+{
+  "title": "Hawkeye",
+  "releaseDate": "24.11.2021",
+  "inUniverseTime": "12.2024",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "",
+  "description": "Clint Barton and Kate Bishop are pulled into a Christmas-time conflict in New York.",
+  "runtimePerEp": 47,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Never Meet Your Heroes",
+        "releaseDate": "24.11.2021",
+        "inUniverseTime": "12.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Hide and Seek",
+        "releaseDate": "24.11.2021",
+        "inUniverseTime": "12.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Echoes",
+        "releaseDate": "01.12.2021",
+        "inUniverseTime": "12.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Partners, Am I Right?",
+        "releaseDate": "08.12.2021",
+        "inUniverseTime": "12.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Ronin",
+        "releaseDate": "15.12.2021",
+        "inUniverseTime": "12.2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "So This Is Christmas?",
+        "releaseDate": "22.12.2021",
+        "inUniverseTime": "12.2024",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "title": "Jessica Jones",
+  "releaseDate": "20.11.2015",
+  "inUniverseTime": "Early 2015 - Spring 2018",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "Part of the Defenders Saga.",
+  "description": "Private investigator Jessica Jones confronts trauma, powered threats, and dangerous cases in New York.",
+  "runtimePerEp": 52,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "AKA Ladies Night",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Early 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "AKA Crush Syndrome",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Early 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "AKA It's Called Whiskey",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Early 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "AKA 99 Friends",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Early 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "AKA The Sandwich Saved Me",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "AKA You're a Winner!",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "AKA Top Shelf Perverts",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "AKA WWJD?",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "AKA Sin Bin",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "AKA 1,000 Cuts",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "AKA I've Got the Blues",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "AKA Take a Bloody Number",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "AKA Smile",
+        "releaseDate": "20.11.2015",
+        "inUniverseTime": "Spring 2015",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "AKA Start at the Beginning",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Spring 2017 - Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "AKA Freak Accident",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "AKA Sole Survivor",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "AKA God Help the Hobo",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "AKA The Octopus",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "AKA Facetime",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "AKA I Want Your Cray Cray",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Summer 2005 - Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "AKA Ain't We Got Fun",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "AKA Shark in the Bathtub, Monster in the Bed",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "AKA Pork Chop",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "AKA Three Lives and Counting",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "AKA Pray for My Patsy",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "AKA Playland",
+        "releaseDate": "08.03.2018",
+        "inUniverseTime": "Mid-2017",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "3": [
+      {
+        "id": 1,
+        "title": "AKA The Perfect Burger",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "AKA You're Welcome",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Mid-2017 - Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "AKA I Have No Spleen",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "AKA Customer Service is Standing By",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "AKA I Wish",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "AKA Sorry Face",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "AKA The Double Half-Wappinger",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "AKA Camera Friendly",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "AKA I Did Something Today",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "AKA Hero Pants",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "AKA Hellcat",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "AKA A Lotta Worms",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "AKA Everything",
+        "releaseDate": "14.06.2019",
+        "inUniverseTime": "Spring 2018",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ]
+  }
+}

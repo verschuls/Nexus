@@ -1,0 +1,331 @@
+{
+  "title": "Daredevil",
+  "releaseDate": "10.04.2015",
+  "inUniverseTime": "Late 2014 - Late 2017",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "Part of the Defenders Saga.",
+  "description": "Matt Murdock defends Hell's Kitchen as a lawyer by day and Daredevil by night.",
+  "runtimePerEp": 52,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Into the Ring",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Cut Man",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Rabbit in a Snowstorm",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "In the Blood",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "World on Fire",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Condemned",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Stick",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "Shadows in the Glass",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Speak of the Devil",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "Nelson v. Murdock",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "The Path of Righteous",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "The Ones We Leave Behind",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "Daredevil",
+        "releaseDate": "10.04.2015",
+        "inUniverseTime": "Late 2014",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "Bang",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "Fall 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Dogs to a Gunfight",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "Fall 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "New York's Finest",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "Fall 2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Penny and Dime",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "Kinbaku",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Regrets Only",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Semper Fidelis",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "Guilty as Sin",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Seven Minutes in Heaven",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "The Man in the Box",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": ".380",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "The Dark at the End of the Tunnel",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "A Cold Day in Hell's Kitchen",
+        "releaseDate": "18.03.2016",
+        "inUniverseTime": "11.2015 - 24.12.2015",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "3": [
+      {
+        "id": 1,
+        "title": "Resurrection",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Spring 2016 - Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Please",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "No Good Deed",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Blindsided",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "The Perfect Game",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "The Devil You Know",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Aftermath",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "Upstairs/Downstairs",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "Revelations",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "Karen",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "Reunion",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "One Last Shot",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "A New Napkin",
+        "releaseDate": "19.10.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ]
+  }
+}

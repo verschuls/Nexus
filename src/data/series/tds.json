@@ -1,0 +1,79 @@
+{
+  "title": "The Defenders",
+  "releaseDate": "18.08.2017",
+  "inUniverseTime": "Spring 2016",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "Defenders Saga crossover miniseries.",
+  "description": "Daredevil, Jessica Jones, Luke Cage, and Iron Fist unite against the Hand.",
+  "runtimePerEp": 50,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "The H Word",
+        "releaseDate": "18.08.2017",
+        "inUniverseTime": "Spring 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Mean Right Hook",
+        "releaseDate": "18.08.2017",
+        "inUniverseTime": "Spring 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Worst Behavior",
+        "releaseDate": "18.08.2017",
+        "inUniverseTime": "Spring 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Royal Dragon",
+        "releaseDate": "18.08.2017",
+        "inUniverseTime": "Spring 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "Take Shelter",
+        "releaseDate": "18.08.2017",
+        "inUniverseTime": "Spring 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Ashes, Ashes",
+        "releaseDate": "18.08.2017",
+        "inUniverseTime": "Spring 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Fish in the Jailhouse",
+        "releaseDate": "18.08.2017",
+        "inUniverseTime": "Spring 2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "The Defenders",
+        "releaseDate": "18.08.2017",
+        "inUniverseTime": "Spring 2016",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ]
+  }
+}

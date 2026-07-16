@@ -1,0 +1,283 @@
+{
+  "title": "Runaways",
+  "releaseDate": "21.11.2017",
+  "inUniverseTime": "October 2017 - May 2018",
+  "tier": "legacy",
+  "state": "Reality",
+  "notes": "Marvel Television series (Hulu). Marvel's Runaways.",
+  "description": "Six Los Angeles teenagers discover their parents are the supervillain group PRIDE and band together against them.",
+  "runtimePerEp": 48,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Reunion",
+        "releaseDate": "21.11.2017",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Rewind",
+        "releaseDate": "21.11.2017",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Destiny",
+        "releaseDate": "21.11.2017",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Fifteen",
+        "releaseDate": "28.11.2017",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Kingdom",
+        "releaseDate": "05.12.2017",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Metamorphosis",
+        "releaseDate": "12.12.2017",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "Refraction",
+        "releaseDate": "19.12.2017",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "Tsunami",
+        "releaseDate": "26.12.2017",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 9,
+        "title": "Doomsday",
+        "releaseDate": "02.01.2018",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 10,
+        "title": "Hostile",
+        "releaseDate": "09.01.2018",
+        "inUniverseTime": "October 2017",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "Gimme Shelter",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Radio On",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Double Zeros",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Old School",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Rock Bottom",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Bury Another",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "Last Rites",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "Past Life",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 9,
+        "title": "Big Shot",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 10,
+        "title": "Hostile Takeover",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 11,
+        "title": "Last Waltz",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 12,
+        "title": "Earth Angel",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 13,
+        "title": "Split Up",
+        "releaseDate": "21.12.2018",
+        "inUniverseTime": "October 2017 - November 2017",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ],
+    "3": [
+      {
+        "id": 1,
+        "title": "Smoke and Mirrors",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "The Great Escape",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Lord of Lies",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Rite of Thunder",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Enter the Dreamland",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Merry Meet Again",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "Left-Hand Path",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "Devil's Torture Chamber",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 9,
+        "title": "The Broken Circle",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 10,
+        "title": "Cheat the Gallows",
+        "releaseDate": "13.12.2019",
+        "inUniverseTime": "November 2017 - May 2018",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

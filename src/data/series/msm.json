@@ -1,0 +1,63 @@
+{
+  "title": "Ms. Marvel",
+  "releaseDate": "08.06.2022",
+  "inUniverseTime": "09.2025",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "",
+  "description": "Kamala Khan discovers cosmic powers and her family history.",
+  "runtimePerEp": 48,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Generation Why",
+        "releaseDate": "08.06.2022",
+        "inUniverseTime": "09.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Crushed",
+        "releaseDate": "15.06.2022",
+        "inUniverseTime": "09.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Destined",
+        "releaseDate": "22.06.2022",
+        "inUniverseTime": "09.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Seeing Red",
+        "releaseDate": "29.06.2022",
+        "inUniverseTime": "09.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Time and Again",
+        "releaseDate": "06.07.2022",
+        "inUniverseTime": "1947 / 09.2025",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "No Normal",
+        "releaseDate": "13.07.2022",
+        "inUniverseTime": "09.2025",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

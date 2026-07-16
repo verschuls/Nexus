@@ -1,0 +1,52 @@
+@import "tailwindcss";
+@import "@heroui/react/styles";
+
+@font-face {
+  font-family: "mono";
+  src: url("/GeistMono.woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "sans";
+  src: url("/Geist.woff2");
+  font-display: swap;
+}
+
+
+@theme {
+  --font-sans: "sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "mono", ui-monospace, monospace;
+}
+
+html,
+body,
+#root {
+  min-height: 100dvh;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: #09090b;
+  color: #e4e4e7;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* Skip render/layout/paint for off-screen cards. `auto` intrinsic size lets the
+   browser reuse each card's last measured height, so the scrollbar stays stable
+   while hundreds of cards mount cheaply. */
+.cv-card {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 360px;
+}
+
+/* Native <details> disclosure — hide the default marker triangle. */
+.disclosure > summary {
+  list-style: none;
+}
+.disclosure > summary::-webkit-details-marker {
+  display: none;
+}

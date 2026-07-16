@@ -1,0 +1,153 @@
+{
+  "title": "Daredevil: Born Again",
+  "releaseDate": "04.03.2025",
+  "inUniverseTime": "2026 - 2027",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "Continuation of the Netflix Daredevil story under Marvel Television.",
+  "description": "Matt Murdock and Wilson Fisk collide again as Fisk rises in New York politics.",
+  "runtimePerEp": 50,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Heaven's Half Hour",
+        "releaseDate": "04.03.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Optics",
+        "releaseDate": "04.03.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "The Hollow of His Hand",
+        "releaseDate": "11.03.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Sic Semper Systema",
+        "releaseDate": "18.03.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "With Interest",
+        "releaseDate": "25.03.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Excessive Force",
+        "releaseDate": "25.03.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "Art for Art's Sake",
+        "releaseDate": "01.04.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "Isle of Joy",
+        "releaseDate": "08.04.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 9,
+        "title": "Straight to Hell",
+        "releaseDate": "15.04.2025",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "The Northern Star",
+        "releaseDate": "24.03.2026",
+        "inUniverseTime": "2027",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Shoot the Moon",
+        "releaseDate": "31.03.2026",
+        "inUniverseTime": "2027",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "The Scales and the Sword",
+        "releaseDate": "07.04.2026",
+        "inUniverseTime": "2027",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Gloves Off",
+        "releaseDate": "07.04.2026",
+        "inUniverseTime": "2027",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "The Grand Design",
+        "releaseDate": "14.04.2026",
+        "inUniverseTime": "2027",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Requiem",
+        "releaseDate": "21.04.2026",
+        "inUniverseTime": "2027",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "The Hateful Darkness",
+        "releaseDate": "28.04.2026",
+        "inUniverseTime": "2027",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "The Southern Cross",
+        "releaseDate": "05.05.2026",
+        "inUniverseTime": "2027",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

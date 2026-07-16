@@ -1,0 +1,63 @@
+{
+  "title": "Secret Invasion",
+  "releaseDate": "21.06.2023",
+  "inUniverseTime": "2026",
+  "tier": "recommended",
+  "state": "Reality",
+  "notes": "",
+  "description": "Nick Fury uncovers a covert Skrull conspiracy on Earth.",
+  "runtimePerEp": 47,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Resurrection",
+        "releaseDate": "21.06.2023",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Promises",
+        "releaseDate": "28.06.2023",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Betrayed",
+        "releaseDate": "05.07.2023",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Beloved",
+        "releaseDate": "12.07.2023",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Harvest",
+        "releaseDate": "19.07.2023",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Home",
+        "releaseDate": "26.07.2023",
+        "inUniverseTime": "2026",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

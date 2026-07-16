@@ -1,0 +1,201 @@
+{
+  "title": "Iron Fist",
+  "releaseDate": "17.03.2017",
+  "inUniverseTime": "07.02.2016 - 09.02.2016 - Late 2017",
+  "tier": "essential",
+  "state": "Alternate Universe",
+  "notes": "Part of the Defenders Saga.",
+  "description": "Danny Rand returns to New York as the Iron Fist and becomes entangled in the Hand's war.",
+  "runtimePerEp": 55,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Snow Gives Way",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "07.02.2016 - 09.02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "Shadow Hawk Takes Flight",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "Rolling Thunder Cannon Punch",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Eight Diagram Dragon Palm",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "Under Leaf Pluck Lotus",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "Immortal Emerges from Cave",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Felling Tree with Roots",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "The Blessing of Many Fractures",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "The Mistress of All Agonies",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "Black Tiger Steals Heart",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 11,
+        "title": "Lead Horse Back to Stable",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 12,
+        "title": "Bar the Big Boss",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 13,
+        "title": "Dragon Plays with Fire",
+        "releaseDate": "17.03.2017",
+        "inUniverseTime": "02.2016",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "The Fury of Iron Fist",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 2,
+        "title": "The City's Not for Burning",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 3,
+        "title": "This Deadly Secret",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 4,
+        "title": "Target: Iron Fist",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 5,
+        "title": "Heart of the Dragon",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 6,
+        "title": "The Dragon Dies at Dawn",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 7,
+        "title": "Morning of the Mindstorm",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 8,
+        "title": "Citadel on the Edge of Vengeance",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 9,
+        "title": "War Without End",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      },
+      {
+        "id": 10,
+        "title": "A Duel of Iron",
+        "releaseDate": "07.09.2018",
+        "inUniverseTime": "Late 2017",
+        "state": "Reality",
+        "timetravel": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "title": "Helstrom",
+  "releaseDate": "16.10.2020",
+  "inUniverseTime": "Fall 2020",
+  "tier": "legacy",
+  "state": "Unconfirmed Canon",
+  "notes": "Marvel Television series (Hulu). Fandom timeline marks it Unconfirmed Canon.",
+  "description": "Siblings Daimon and Ana Helstrom hunt the worst of humanity, shadowed by their serial-killer father's legacy.",
+  "runtimePerEp": 48,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Mother's Little Helpers",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 2,
+        "title": "Viaticum",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 3,
+        "title": "The One Who Got Away",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 4,
+        "title": "Containment",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 5,
+        "title": "Committed",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 6,
+        "title": "Leviathan",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 7,
+        "title": "Scars",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 8,
+        "title": "Underneath",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 9,
+        "title": "Vessels",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      },
+      {
+        "id": 10,
+        "title": "Hell Storm",
+        "releaseDate": "16.10.2020",
+        "inUniverseTime": "Fall 2020",
+        "timetravel": false,
+        "state": "Unconfirmed Canon"
+      }
+    ]
+  }
+}

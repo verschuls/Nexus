@@ -1,0 +1,87 @@
+{
+  "title": "She-Hulk: Attorney at Law",
+  "releaseDate": "18.08.2022",
+  "inUniverseTime": "2025",
+  "tier": "recommended",
+  "state": "Reality",
+  "notes": "",
+  "description": "Jennifer Walters balances superhero law, dating, and life as She-Hulk.",
+  "runtimePerEp": 30,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "A Normal Amount of Rage",
+        "releaseDate": "18.08.2022",
+        "inUniverseTime": "2024",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Superhuman Law",
+        "releaseDate": "25.08.2022",
+        "inUniverseTime": "2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "The People vs. Emil Blonsky",
+        "releaseDate": "01.09.2022",
+        "inUniverseTime": "2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Is This Not Real Magic?",
+        "releaseDate": "08.09.2022",
+        "inUniverseTime": "2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Mean, Green, and Straight Poured into These Jeans",
+        "releaseDate": "15.09.2022",
+        "inUniverseTime": "2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Just Jen",
+        "releaseDate": "22.09.2022",
+        "inUniverseTime": "2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "The Retreat",
+        "releaseDate": "29.09.2022",
+        "inUniverseTime": "2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "Ribbit and Rip It",
+        "releaseDate": "06.10.2022",
+        "inUniverseTime": "2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 9,
+        "title": "Whose Show Is This?",
+        "releaseDate": "13.10.2022",
+        "inUniverseTime": "2025",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

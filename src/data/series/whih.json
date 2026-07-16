@@ -1,0 +1,97 @@
+{
+  "title": "WHIH Newsfront",
+  "releaseDate": "02.07.2015",
+  "inUniverseTime": "Mid-2015 - Spring 2016",
+  "tier": "completionist",
+  "state": "Reality",
+  "notes": "WHIH World News viral-marketing web series (Ant-Man and Captain America: Civil War tie-ins).",
+  "description": "In-universe WHIH news broadcasts covering Scott Lang, Pym Technologies and the fallout of the Avengers' battles.",
+  "runtimePerEp": 3,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "WHIH Newsfront Promo",
+        "releaseDate": "02.07.2015",
+        "inUniverseTime": "Mid-2015",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "WHIH Newsfront Top Stories",
+        "releaseDate": "07.07.2015",
+        "inUniverseTime": "Mid-2015",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "WHIH EXCLUSIVE: 2012 VistaCorp break-in security footage involving cyber-criminal Scott Lang",
+        "releaseDate": "11.07.2015",
+        "inUniverseTime": "Mid-2015",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "WHIH Newsfront: WIRED Insider Interviews Darren Cross, CEO of Pym Technologies",
+        "releaseDate": "13.07.2015",
+        "inUniverseTime": "Mid-2015",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "WHIH EXCLUSIVE: Scott Lang Interview",
+        "releaseDate": "16.07.2015",
+        "inUniverseTime": "Mid-2015",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "AVENGERS IMPACT: A WHIH Newsfront Special Report",
+        "releaseDate": "22.04.2016",
+        "inUniverseTime": "Spring 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "WHIH Newsfront: The Cost of Saving the World",
+        "releaseDate": "26.04.2016",
+        "inUniverseTime": "Spring 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "WHIH Newsfront: The Avengers & The White House",
+        "releaseDate": "28.04.2016",
+        "inUniverseTime": "Spring 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "WHIH Newsfront Exclusive: President Ellis Discusses the Avengers",
+        "releaseDate": "03.05.2016",
+        "inUniverseTime": "Spring 2016",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "WHIH Breaking News: Attack in Lagos",
+        "releaseDate": "03.05.2016",
+        "inUniverseTime": "Spring 2016",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

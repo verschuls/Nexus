@@ -1,0 +1,161 @@
+{
+  "title": "Agent Carter",
+  "releaseDate": "06.01.2022",
+  "inUniverseTime": "15.05.1946 - 07.1947",
+  "tier": "optional",
+  "state": "Reality",
+  "notes": "",
+  "description": "Working for SSR, Peggy world rather be in the field.",
+  "runtimePerEp": 43,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Now is Not the End",
+        "releaseDate": "06.01.2015",
+        "inUniverseTime": "15.05.1946 - 16.05.1946",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Bridge and Tunnel",
+        "releaseDate": "06.01.2015",
+        "inUniverseTime": "05.1946",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Time and Tide",
+        "releaseDate": "13.01.2015",
+        "inUniverseTime": "05.1946",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "The Blitzkrieg Button",
+        "releaseDate": "27.01.2015",
+        "inUniverseTime": "05.1946",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "The Iron Ceiling",
+        "releaseDate": "03.02.2015",
+        "inUniverseTime": "25.05.1946 - 26.05.1946",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "A Sin to Err",
+        "releaseDate": "10.02.2015",
+        "inUniverseTime": "07.05.1946",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "SNAFU",
+        "releaseDate": "17.02.2015",
+        "inUniverseTime": "07.05.1946",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "Valediction",
+        "releaseDate": "24.02.2015",
+        "inUniverseTime": "08.05.1946- 09.05.1946",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "The Lady in the Lake",
+        "releaseDate": "19.01.2016",
+        "inUniverseTime": "10.07.1947 - 11.07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "A View in the Dark",
+        "releaseDate": "19.01.2016",
+        "inUniverseTime": "07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Better Angels",
+        "releaseDate": "26.01.2016",
+        "inUniverseTime": "14.07.1947 - 16.07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Smoke & Mirrors",
+        "releaseDate": "02.02.2016",
+        "inUniverseTime": "18.07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "The Atomic Job",
+        "releaseDate": "09.02.2016",
+        "inUniverseTime": "18.07.1947 - 19.07.1947",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Life of the Party",
+        "releaseDate": "16.02.2016",
+        "inUniverseTime": "19.07.1947 - 21.07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 7,
+        "title": "Monsters",
+        "releaseDate": "16.02.2016",
+        "inUniverseTime": "21.07.1947 - 07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 8,
+        "title": "The Edge of Mystery",
+        "releaseDate": "23.02.2016",
+        "inUniverseTime": "07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 9,
+        "title": "A Little Song and Dance",
+        "releaseDate": "23.02.2016",
+        "inUniverseTime": "07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 10,
+        "title": "Hollywood Ending",
+        "releaseDate": "01.03.2016",
+        "inUniverseTime": "07.1947",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "title": "Loki",
+  "releaseDate": "09.06.2021",
+  "inUniverseTime": "Outside linear time",
+  "tier": "essential",
+  "state": "Reality",
+  "notes": "TVA story occurs outside normal chronology after the 2012 branch in Avengers: Endgame.",
+  "description": "A variant Loki is pulled into the Time Variance Authority and becomes central to the multiverse.",
+  "runtimePerEp": 50,
+  "timetravel": true,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Glorious Purpose",
+        "releaseDate": "09.06.2021",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "The Variant",
+        "releaseDate": "16.06.2021",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Lamentis",
+        "releaseDate": "23.06.2021",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "The Nexus Event",
+        "releaseDate": "30.06.2021",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Journey into Mystery",
+        "releaseDate": "07.07.2021",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "For All Time. Always.",
+        "releaseDate": "14.07.2021",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "Ouroboros",
+        "releaseDate": "05.10.2023",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Breaking Brad",
+        "releaseDate": "12.10.2023",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "1893",
+        "releaseDate": "19.10.2023",
+        "inUniverseTime": "1893 / Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Heart of the TVA",
+        "releaseDate": "26.10.2023",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Science/Fiction",
+        "releaseDate": "02.11.2023",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      },
+      {
+        "id": 6,
+        "title": "Glorious Purpose",
+        "releaseDate": "09.11.2023",
+        "inUniverseTime": "Outside linear time",
+        "timetravel": true,
+        "state": "Reality"
+      }
+    ]
+  }
+}
