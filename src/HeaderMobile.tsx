@@ -41,7 +41,7 @@ export const HeaderMobile: FC<HeaderProps> = ({
     <header className="sticky top-0 z-40 border-b border-white/6 bg-zinc-950/70 backdrop-blur-xl">
       <div className="mx-auto flex flex-wrap items-center gap-3 px-5 py-4">
         {/* branding — logo | title | split | github */}
-        <div className="flex h-14 items-center gap-3 rounded-2xl border border-white/10 bg-white/2 pl-3 pr-1.5">
+        <div className="flex h-14 shrink-0 items-center gap-3 rounded-2xl border border-white/10 bg-white/2 pl-3 pr-1.5">
 
           <img src={logo} alt="Nexus" draggable={false} className="h-10 w-10 select-none" />
           <div>
@@ -60,13 +60,13 @@ export const HeaderMobile: FC<HeaderProps> = ({
           </a>
         </div>
 
-        {/* watched — bordered container, ~half the row */}
-        <div className="flex ml-auto h-14 items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/2 px-3">
+        {/* watched — bordered container, fills the rest of the row */}
+        <div className="flex h-14 min-w-0 flex-1 items-center justify-center gap-4 rounded-2xl border border-white/10 bg-white/2 px-3">
           <div
             className="grid h-10 w-10 shrink-0 place-items-center rounded-full"
             style={{ background: `conic-gradient(#34d399 ${watchPct * 3.6}deg, rgba(255,255,255,0.08) 0deg)` }}
           >
-            <div className="grid h-8.5 w-8.5 place-items-center rounded-full bg-zinc-950 font-mono text-[9px] text-zinc-400">
+            <div className="grid h-[34px] w-[34px] place-items-center rounded-full bg-zinc-950 font-mono text-[9px] text-zinc-400">
               {watchPct}%
             </div>
           </div>
