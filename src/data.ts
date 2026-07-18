@@ -11,7 +11,7 @@ export interface BaseEntry {
   title: string;
   releaseDate: string; // dd.mm.yyyy
   inUniverseTime: string;
-  tier: "essential" | "recommended" | "optional" | "completionist" | string;
+  tier: "essential" | "recommended" | "optional" | "completionist" | "legacy" | string;
   state: string;
   notes: string;
   description: string;
@@ -66,7 +66,7 @@ export function categoryLabel(c: Category): string {
 }
 
 /** dd.mm.yyyy -> sortable epoch ms. Falls back to 0 on malformed input. */
-export function parseReleaseDate(d: string): number {
+function parseReleaseDate(d: string): number {
   const [dd, mm, yy] = (d ?? "").split(".").map((n) => parseInt(n, 10));
   if (!yy) return 0;
   return new Date(yy, (mm || 1) - 1, dd || 1).getTime();
@@ -101,7 +101,7 @@ const chronoIndex: Record<string, number> = {};
   }
 });
 
-export function chronoRank(id: string): number {
+function chronoRank(id: string): number {
   return chronoIndex[id] ?? Number.MAX_SAFE_INTEGER;
 }
 

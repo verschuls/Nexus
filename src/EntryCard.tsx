@@ -20,9 +20,9 @@ import {
 // whole chip: text + soft background + border tint are derived from it.
 const TIER: Record<string, { label: string; color: string }> = {
   essential:     { label: "Essential",     color: "#35e935" },
-  recommended:   { label: "Recommended",   color: "#25b37c" },
+  recommended:   { label: "Worthwhile",   color: "#25b37c" },
   optional:      { label: "Optional",      color: "#e0d039" },
-  completionist: { label: "Completionist", color: "#eb3150" },
+  completionist: { label: "100%", color: "#eb3150" },
   legacy:        { label: "Legacy",        color: "#9e964a" },
 };
 function tierMeta(tier: string) {

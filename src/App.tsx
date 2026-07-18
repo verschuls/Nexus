@@ -1,69 +1,18 @@
-import { useCallback, useDeferredValue, useEffect, useMemo, useState } from "react";
-import type { FC } from "react";
+import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
 import {
-  CATEGORIES,
-  categoryLabel,
-  itemsByCategory,
   allItems,
   items as ALL_ITEMS,
   timeline,
   timelineSemi,
 } from "./data";
 import type { Category, SortMode } from "./data";
-import { EntryCard, TIERS } from "./EntryCard";
-import logo from "./assets/logo.png";
-import {
-  IconChevron,
-  IconClip,
-  IconCoffee,
-  IconFilm,
-  IconGithub,
-  IconSearch,
-  IconShort,
-  IconSliders,
-  IconTv,
-  type IconProps,
-} from "./icons";
-
-const MEDIUM_ICON: Record<Category, FC<IconProps>> = {
-  movies: IconFilm,
-  series: IconTv,
-  oneshots: IconClip,
-  shorts: IconShort,
-};
-
-const SORTS: { key: SortMode; label: string }[] = [
-  { key: "chrono", label: "In-universe" },
-  { key: "semi", label: "Semi-chrono" },
-  { key: "release", label: "Release" },
-];
+import { EntryCard } from "./EntryCard";
+import { Header } from "./Header";
+import { HeaderMobile } from "./HeaderMobile";
+import { useMediaQuery } from "./useMediaQuery";
+import { IconCoffee, IconSearch } from "./icons";
 
 const TOTAL = ALL_ITEMS.length;
-// Static per-medium / per-tier counts — `items` never changes, so tally once.
-const COUNT: Record<Category, number> = {
-  movies: itemsByCategory("movies").length,
-  series: itemsByCategory("series").length,
-  oneshots: itemsByCategory("oneshots").length,
-  shorts: itemsByCategory("shorts").length,
-};
-const TIER_COUNT: Record<string, number> = {};
-for (const it of ALL_ITEMS) {
-  TIER_COUNT[it.data.tier] = (TIER_COUNT[it.data.tier] ?? 0) + 1;
-}
-
-/* Shared toggle/segment styling — one neutral accent, tactile press. */
-const pill = (on: boolean) =>
-  `flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-[background-color,border-color,color,transform] duration-200 active:scale-[0.96] ${
-    on
-      ? "border-white/20 bg-white/10 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"
-      : "border-white/10 text-zinc-500 hover:border-white/25 hover:text-zinc-200"
-  }`;
-const seg = (on: boolean) =>
-  `rounded-full px-3 py-1.5 text-sm font-medium transition-[background-color,color,transform] duration-200 active:scale-[0.96] ${
-    on
-      ? "bg-white/10 text-white shadow-[inset_0_1px_0_rgba(255,255,255,0.08)]"
-      : "text-zinc-500 hover:text-zinc-200"
-  }`;
 
 /* ------------------------------------------------------------------ *
  * Watched state — persisted to localStorage, keyed by unique id
@@ -71,6 +20,7 @@ const seg = (on: boolean) =>
 const WATCHED_KEY = "nexus:watched"; // release view — keyed by show id
 const WATCHED_CHRONO_KEY = "nexus:watched-chrono"; // in-universe view — keyed by chrono order
 const WATCHED_SEMI_KEY = "nexus:watched-semi"; // semi-chrono view — keyed by semi order
+const FILTERS_KEY = "nexus:filters-open"; // filter panel open/closed, remembered across reloads
 function loadSet<T extends string | number>(key: string): Set<T> {
   try {
     const raw = localStorage.getItem(key);
@@ -88,10 +38,30 @@ export default function App() {
   const [watched, setWatched] = useState<Set<string>>(() => loadSet(WATCHED_KEY));
   const [watchedChrono, setWatchedChrono] = useState<Set<number>>(() => loadSet(WATCHED_CHRONO_KEY));
   const [watchedSemi, setWatchedSemi] = useState<Set<number>>(() => loadSet(WATCHED_SEMI_KEY));
-  const [collapsed, setCollapsed] = useState(false);
+  const [filtersOpen, setFiltersOpen] = useState<boolean>(() => {
+    try {
+      return localStorage.getItem(FILTERS_KEY) !== "closed"; // default open
+    } catch {
+      return true;
+    }
+  });
+  const searchRef = useRef<HTMLInputElement>(null);
 
   // Filtering runs against the deferred value so typing never blocks on the list.
   const deferredQuery = useDeferredValue(query);
+
+  // "/" focuses search (unless already typing in a field).
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key !== "/") return;
+      const el = document.activeElement as HTMLElement | null;
+      if (el && (el.tagName === "INPUT" || el.tagName === "TEXTAREA" || el.isContentEditable)) return;
+      e.preventDefault();
+      searchRef.current?.focus();
+    };
+    document.addEventListener("keydown", onKey);
+    return () => document.removeEventListener("keydown", onKey);
+  }, []);
 
   useEffect(() => {
     try {
@@ -114,6 +84,15 @@ export default function App() {
       /* ignore quota / private-mode errors */
     }
   }, [watchedSemi]);
+  useEffect(() => {
+    try {
+      localStorage.setItem(FILTERS_KEY, filtersOpen ? "open" : "closed");
+    } catch {
+      /* ignore quota / private-mode errors */
+    }
+  }, [filtersOpen]);
+
+  const toggleFilters = useCallback(() => setFiltersOpen((v) => !v), []);
 
   // Stable identities so memoized EntryCards don't re-render on every keystroke.
   // Release view toggles by show id; in-universe view toggles by chrono order.
@@ -210,146 +189,35 @@ export default function App() {
       : timeline.length
     : TOTAL;
 
-  // Fold classes — collapse on mobile when toggled, always open on md+.
-  const foldRows = collapsed
-    ? "grid-rows-[0fr] opacity-0 md:grid-rows-[1fr] md:opacity-100"
-    : "grid-rows-[1fr] opacity-100";
-  const foldPE = collapsed ? "max-md:pointer-events-none" : "";
+  const watchPct = totalNum ? Math.round((watchedNum / totalNum) * 100) : 0;
+
+  // One header mounts at a time (shared searchRef / "/" hotkey), swapped by viewport.
+  const isMobile = useMediaQuery("(max-width: 767px)");
+  const HeaderComp = isMobile ? HeaderMobile : Header;
 
   return (
-    <div className="min-h-[100dvh] bg-zinc-950 text-zinc-200">
-      {/* header */}
-      <header className="sticky top-0 z-40 border-b border-white/[0.06] bg-zinc-950/70 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-[1400px] flex-col px-5 py-4 md:flex-row md:items-center md:justify-between md:gap-4">
-          <div className="flex items-center gap-3">
-            <img
-              src={logo}
-              alt="Nexus"
-              draggable={false}
-              className="h-8 w-8 shrink-0 select-none"
-            />
-            <div>
-              <h1 className="text-sm font-semibold tracking-tight text-zinc-50">NEXUS</h1>
-              <p className="text-xs text-zinc-500">
-                MCU timeline · watched{" "}
-                <span className="font-mono text-emerald-400">{watchedNum}</span>
-                <span className="font-mono">/{totalNum}</span>
-              </p>
-            </div>
-
-            <a
-              href="https://github.com/verschuls/nexus"
-              target="_blank"
-              rel="noreferrer"
-              aria-label="GitHub repository"
-              className="ml-auto flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/10 bg-white/[0.03] text-zinc-400 transition-colors hover:border-white/25 hover:text-white active:scale-[0.94] md:ml-2"
-            >
-
-              <IconGithub className="h-4 w-4" />
-            </a>
-
-            <button
-              type="button"
-              onClick={() => setCollapsed((v) => !v)}
-              aria-expanded={!collapsed}
-              aria-label="Toggle filters"
-              className="ml-auto flex items-center gap-1.5 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-xs font-medium text-zinc-300 transition-all duration-200 hover:border-white/25 hover:text-white active:scale-[0.94] md:hidden"
-            >
-              <IconSliders className="h-4 w-4" />
-              <IconChevron className={`h-3.5 w-3.5 transition-transform duration-300 ${collapsed ? "" : "rotate-180"}`} />
-            </button>
-          </div>
-
-          <div className={`grid w-full transition-[grid-template-rows,opacity] duration-300 ease-out md:w-72 ${foldRows}`}>
-            <div className={`min-h-0 overflow-hidden ${foldPE}`}>
-              <label className="relative mt-3 block w-full md:mt-0">
-                <IconSearch className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-zinc-600" />
-                <input
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search title, id, episode…"
-                  className="w-full rounded-full border border-white/10 bg-white/[0.03] py-2 pl-9 pr-3 text-sm text-zinc-200 outline-none transition-colors placeholder:text-zinc-600 focus:border-white/25 focus:bg-white/[0.05]"
-                />
-              </label>
-            </div>
-          </div>
-        </div>
-
-        {/* filters + sort (folds on mobile scroll) */}
-        <div className={`mx-auto grid max-w-[1400px] px-5 transition-[grid-template-rows,opacity] duration-300 ease-out ${foldRows}`}>
-          <div className={`flex min-h-0 flex-col gap-3 overflow-hidden pb-4 ${foldPE}`}>
-          <div className="flex flex-col gap-3 lg:flex-row lg:items-center lg:justify-between">
-            <div className="flex flex-wrap items-center gap-2">
-              <span className="mr-1 hidden text-[11px] font-medium uppercase tracking-wider text-zinc-600 sm:inline">
-                Show
-              </span>
-              <button type="button" aria-pressed={allMediums} onClick={clearMediums} className={pill(allMediums)}>
-                All
-                <span className="font-mono text-xs text-zinc-500">{TOTAL}</span>
-              </button>
-              {CATEGORIES.map((c) => {
-                const Icon = MEDIUM_ICON[c];
-                const on = mediums.has(c);
-                return (
-                  <button key={c} type="button" aria-pressed={on} onClick={() => toggleMedium(c)} className={pill(on)}>
-                    <Icon className="h-4 w-4" />
-                    {categoryLabel(c)}
-                    <span className="font-mono text-xs text-zinc-500">{COUNT[c]}</span>
-                  </button>
-                );
-              })}
-            </div>
-
-            <div className="flex items-center gap-2">
-              <span className="text-[11px] font-medium uppercase tracking-wider text-zinc-600">Sort</span>
-              <div className="inline-flex rounded-full border border-white/10 bg-white/[0.02] p-1">
-                {SORTS.map((s) => (
-                  <button
-                    key={s.key}
-                    type="button"
-                    aria-pressed={sort === s.key}
-                    onClick={() => setSort(s.key)}
-                    className={seg(sort === s.key)}
-                  >
-                    {s.label}
-                  </button>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* tier filters — active pill tinted with the tier's own hex */}
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="mr-1 hidden text-[11px] font-medium uppercase tracking-wider text-zinc-600 sm:inline">
-              Tier
-            </span>
-            <button type="button" aria-pressed={allTiers} onClick={clearTiers} className={pill(allTiers)}>
-              All
-              <span className="font-mono text-xs text-zinc-500">{TOTAL}</span>
-            </button>
-            {TIERS.map((t) => {
-              const on = tiers.has(t.key);
-              return (
-                <button
-                  key={t.key}
-                  type="button"
-                  aria-pressed={on}
-                  onClick={() => toggleTier(t.key)}
-                  style={on ? { color: t.color, backgroundColor: `${t.color}1f`, borderColor: `${t.color}3d` } : undefined}
-                  className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-sm font-medium transition-[background-color,border-color,color,transform] duration-200 active:scale-[0.96] ${
-                    on ? "" : "border-white/10 text-zinc-500 hover:border-white/25 hover:text-zinc-200"
-                  }`}
-                >
-                  <span className="h-2 w-2 rounded-full" style={{ backgroundColor: t.color }} />
-                  {t.label}
-                  <span className="font-mono text-xs text-zinc-500">{TIER_COUNT[t.key] ?? 0}</span>
-                </button>
-              );
-            })}
-          </div>
-          </div>
-        </div>
-      </header>
+    <div className="min-h-dvh bg-zinc-950 text-zinc-200">
+      <HeaderComp
+        query={query}
+        setQuery={setQuery}
+        searchRef={searchRef}
+        filtersOpen={filtersOpen}
+        onToggleFilters={toggleFilters}
+        mediums={mediums}
+        tiers={tiers}
+        allMediums={allMediums}
+        allTiers={allTiers}
+        clearMediums={clearMediums}
+        toggleMedium={toggleMedium}
+        clearTiers={clearTiers}
+        toggleTier={toggleTier}
+        sort={sort}
+        setSort={setSort}
+        total={TOTAL}
+        watchedNum={watchedNum}
+        totalNum={totalNum}
+        watchPct={watchPct}
+      />
 
       {/* content */}
       <main className="mx-auto max-w-[1400px] px-5 py-8">
