@@ -27,7 +27,7 @@ Personal MCU catalog built for one thing: figuring out **what to watch next**. R
 
 ## Stack
 
-React 19 + TypeScript (strict) · Vite 8 · Tailwind CSS v4 · a touch of HeroUI v3. No router, no state library.
+React 19 + TypeScript (strict) · Vite 8 · Tailwind CSS v4. No router, no state library.
 
 ## Getting started
 
@@ -38,25 +38,6 @@ pnpm install
 pnpm dev      # dev server
 pnpm build    # production build
 ```
-
-## Structure
-
-```
-src/data/                       # one JSON per entry, grouped by medium
-  movies/ series/ oneshots/ shorts/
-  chrono.json                   # in-universe watch order (episode-granular)
-  semi-chrono.json              # collapsed watch order
-src/data.ts                     # glob-loads entries + builds the orderings
-src/App.tsx, EntryCard.tsx      # shell + card
-```
-
-Tier and canon-state colours are plain hex maps at the top of `EntryCard.tsx` - edit a value and the badges + filters follow.
-
-## Roadmap
-
-- [ ] Balance the semi-chrono ordering.
-- [ ] Per-episode watched tracking.
-- [ ] Shareable / exportable progress.
 
 ## Credits & disclaimer
 

@@ -220,7 +220,7 @@ export default function App() {
       />
 
       {/* content */}
-      <main className="mx-auto max-w-[1400px] px-5 py-8">
+      <main className="mx-auto max-w-350 px-5 py-8">
         {isEmpty ? (
           <div className="flex flex-col items-center justify-center gap-3 rounded-2xl border border-dashed border-white/10 py-24 text-center">
             <IconSearch className="h-8 w-8 text-zinc-700" />
@@ -268,7 +268,7 @@ export default function App() {
         )}
       </main>
 
-      <footer className="mx-auto max-w-[1400px] px-5 pb-12 pt-4">
+      <footer className="mx-auto max-w-350 px-5 pb-12 pt-4">
         <p className="text-center font-mono text-[11px] text-zinc-700">
           {count} {count === 1 ? "entry" : "entries"} ·{" "}
           {sort === "chrono"
@@ -278,7 +278,7 @@ export default function App() {
               : "release order"}
         </p>
 
-        <div className="mx-auto my-6 h-px w-16 bg-gradient-to-r from-transparent via-white/15 to-transparent" />
+        <div className="mx-auto my-6 h-px w-16 bg-linear-to-r from-transparent via-white/15 to-transparent" />
 
         <div className="flex flex-col items-center gap-2.5">
           <p className="flex items-center gap-1.5 text-sm text-zinc-400">

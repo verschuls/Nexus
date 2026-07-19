@@ -118,7 +118,7 @@ export const Header: FC<HeaderProps> = ({
               className="grid h-10 w-10 shrink-0 place-items-center rounded-full"
               style={{ background: `conic-gradient(#34d399 ${watchPct * 3.6}deg, rgba(255,255,255,0.08) 0deg)` }}
             >
-              <div className="grid h-[34px] w-[34px] place-items-center rounded-full bg-zinc-950 font-mono text-[9px] text-zinc-400">
+              <div className="grid h-8.5 w-8.5 place-items-center rounded-full bg-zinc-950 font-mono text-[9px] text-zinc-400">
                 {watchPct}%
               </div>
             </div>

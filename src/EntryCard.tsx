@@ -1,5 +1,4 @@
 import { memo } from "react";
-import { Card, CardContent, CardFooter } from "@heroui/react";
 import { categoryLabel, totalEpisodes } from "./data";
 import type { Entry, Episode, Item } from "./data";
 import {
@@ -70,7 +69,7 @@ function HexChip({ color, icon, label }: { color: string; icon?: React.ReactNode
 function Meta({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) {
   return (
     <div className="flex items-start gap-2">
-      <span className="mt-[1px] text-zinc-600">{icon}</span>
+      <span className="mt-px text-zinc-600">{icon}</span>
       <div className="min-w-0">
         <div className="text-[10px] font-medium uppercase tracking-wider text-zinc-600">{label}</div>
         <div className="truncate text-sm text-zinc-300">{value}</div>
@@ -105,7 +104,7 @@ function Seasons({
   const keys = Object.keys(seasons).sort((a, b) => Number(a) - Number(b));
   return (
     <div
-      className="border-t border-white/[0.06]"
+      className="border-t border-white/6"
       onClick={(e) => e.stopPropagation()}
       onKeyDown={(e) => e.stopPropagation()}
     >
@@ -113,7 +112,7 @@ function Seasons({
         const eps = seasons[num];
         const seasonTier = perSeasonTier?.[num];
         return (
-          <details key={num} className="disclosure group border-b border-white/[0.06]">
+          <details key={num} className="disclosure group border-b border-white/6">
             <summary className="flex cursor-pointer items-center gap-3 py-3 text-sm text-zinc-200 outline-none hover:text-white">
               <span className="font-medium">Season {num}</span>
               <span className="font-mono text-xs text-zinc-500">{eps.length} ep{eps.length === 1 ? "" : "s"}</span>
@@ -122,7 +121,7 @@ function Seasons({
               ) : null}
               <IconChevron className="ml-auto h-4 w-4 text-zinc-500 transition-transform duration-200 group-open:rotate-180" />
             </summary>
-            <ol className="mb-2 divide-y divide-white/[0.05] border-t border-white/[0.05]">
+            <ol className="mb-2 divide-y divide-white/5 border-t border-white/5">
               {eps.map((ep) => {
                 const alt = ep.state && ep.state !== "Reality";
                 return (
@@ -176,7 +175,7 @@ function EntryCardImpl({ item, index, watched, toggleKey, onToggle, runSeason, r
     runSeason && runEps ? { [runSeason]: runEps } : data.seasons;
 
   return (
-    <Card
+    <div
       role="button"
       tabIndex={0}
       aria-pressed={watched}
@@ -189,11 +188,11 @@ function EntryCardImpl({ item, index, watched, toggleKey, onToggle, runSeason, r
       }}
       className={`cv-card flex h-full cursor-pointer flex-col rounded-2xl border outline-none transition-colors duration-200 focus-visible:border-white/30 ${
         watched
-          ? "border-emerald-500/30 bg-emerald-500/[0.04]"
-          : "border-white/[0.06] bg-white/[0.02] hover:border-white/[0.12] hover:bg-white/[0.035]"
+          ? "border-emerald-500/30 bg-emerald-500/4"
+          : "border-white/6 bg-white/2 hover:border-white/12 hover:bg-white/[0.035]"
       }`}
     >
-      <CardContent className="flex flex-1 flex-col gap-4 p-5">
+      <div className="flex flex-1 flex-col gap-4 p-5">
         <div className="flex items-start justify-between gap-3">
           <span className="font-mono text-xs text-zinc-600">
             {String(index + 1).padStart(2, "0")}
@@ -242,15 +241,15 @@ function EntryCardImpl({ item, index, watched, toggleKey, onToggle, runSeason, r
             <Seasons seasons={seasonsToShow} perSeasonTier={data.perSeasonTier} />
           </div>
         ) : null}
-      </CardContent>
+      </div>
 
-      <CardFooter className="border-t border-white/[0.06] px-5 py-3">
+      <div className="border-t border-white/6 px-5 py-3">
         <div className="flex w-full items-center justify-between font-mono text-[11px] text-zinc-600">
           <span>{categoryLabel(category)}</span>
           <span>{data.inUniverseTime}</span>
         </div>
-      </CardFooter>
-    </Card>
+      </div>
+    </div>
   );
 }
 
