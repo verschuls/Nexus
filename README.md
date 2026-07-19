@@ -1,4 +1,6 @@
-<h1 align="center">NEXUS</h1>
+<h1 align="center">
+  <a href="https://nexus.verschuls.xyz">NEXUS</a>
+</h1>
 
 <p align="center">
   A fan-made viewer for watching the Marvel Cinematic Universe in in-universe order - films, series, one-shots, shorts, and web series woven into one timeline.
