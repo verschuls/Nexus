@@ -1,0 +1,97 @@
+{
+  "title": "I Am Groot",
+  "releaseDate": "10.08.2022",
+  "inUniverseTime": "Mid-2014",
+  "tier": "recommended",
+  "state": "Reality",
+  "notes": "",
+  "description": "The troublemaking twig finds himself exploring the universe aboard the Guardian's spaceships.",
+  "runtimePerEp": 6,
+  "timetravel": false,
+  "seasons": {
+    "1": [
+      {
+        "id": 1,
+        "title": "Groot's First Steps",
+        "releaseDate": "10.08.2022",
+        "inUniverseTime": "Mid-2014",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "The Little Guy",
+        "releaseDate": "10.08.2022",
+        "inUniverseTime": "Late-2014",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Groot's Pursuit",
+        "releaseDate": "10.08.2022",
+        "inUniverseTime": "Late-2014",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Groot Takes a Bath",
+        "releaseDate": "10.08.2022",
+        "inUniverseTime": "10.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Magnum Opus",
+        "releaseDate": "10.08.2022",
+        "inUniverseTime": "Late-2014",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ],
+    "2": [
+      {
+        "id": 1,
+        "title": "Are You My Groot?",
+        "releaseDate": "06.09.2023",
+        "inUniverseTime": "Late-2014",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 2,
+        "title": "Groot Noses Around",
+        "releaseDate": "06.09.2023",
+        "inUniverseTime": "Late-2014",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 3,
+        "title": "Groot's Snow Day",
+        "releaseDate": "10.08.2022",
+        "inUniverseTime": "Late-2014",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 4,
+        "title": "Groot's Sweet Treat",
+        "releaseDate": "10.08.2022",
+        "inUniverseTime": "10.2025",
+        "timetravel": false,
+        "state": "Reality"
+      },
+      {
+        "id": 5,
+        "title": "Groot and the Great Prophecy",
+        "releaseDate": "10.08.2022",
+        "inUniverseTime": "Late-2014",
+        "timetravel": false,
+        "state": "Reality"
+      }
+    ]
+  }
+}

@@ -156,3 +156,10 @@ function buildTimeline(raw: { order: number; id: string; eps?: number[] }[]): Ti
 
 export const timeline = buildTimeline(chronoRaw as { order: number; id: string; eps?: number[] }[]);
 export const timelineSemi = buildTimeline(semiRaw as { order: number; id: string; eps?: number[] }[]);
+
+/** Stable per-unit key for watched persistence — derived from content
+ * (slug:season:episodes), NOT the volatile `order`, so renumbering the
+ * timelines never invalidates saved progress. */
+export function unitKey(u: TimelineUnit): string {
+  return `${u.item.id}:${u.season ?? ""}:${u.eps?.map((e) => e.id).join(".") ?? ""}`;
+}

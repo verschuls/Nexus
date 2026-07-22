@@ -4,6 +4,7 @@ import {
   items as ALL_ITEMS,
   timeline,
   timelineSemi,
+  unitKey,
 } from "./data";
 import type { Category, SortMode } from "./data";
 import { EntryCard } from "./EntryCard";
@@ -30,14 +31,39 @@ function loadSet<T extends string | number>(key: string): Set<T> {
   }
 }
 
+const SCHEMA_KEY = "nexus:schema"; // bumped when the watched key format changes
+const WATCHED_SCHEMA = 2; // v1 = chrono/semi keyed by `order` int; v2 = keyed by stable unitKey
+
+// One-time migration: chrono/semi watched used to key off the volatile `order`
+// integer. v2 keys off a stable content signature (unitKey), so renumbering the
+// timelines no longer wipes progress — but the OLD saved sets are meaningless now,
+// so clear them once. Returns true only when real progress was actually discarded
+// (so first-time visitors don't get the notice).
+function migrateWatchedSchema(): boolean {
+  try {
+    if (localStorage.getItem(SCHEMA_KEY) === String(WATCHED_SCHEMA)) return false;
+    const chrono = localStorage.getItem(WATCHED_CHRONO_KEY);
+    const semi = localStorage.getItem(WATCHED_SEMI_KEY);
+    const hadProgress = (!!chrono && chrono !== "[]") || (!!semi && semi !== "[]");
+    localStorage.removeItem(WATCHED_CHRONO_KEY);
+    localStorage.removeItem(WATCHED_SEMI_KEY);
+    localStorage.setItem(SCHEMA_KEY, String(WATCHED_SCHEMA));
+    return hadProgress;
+  } catch {
+    return false;
+  }
+}
+const watchedWasReset = migrateWatchedSchema();
+
 export default function App() {
   const [mediums, setMediums] = useState<Set<Category>>(new Set());
   const [tiers, setTiers] = useState<Set<string>>(new Set());
   const [sort, setSort] = useState<SortMode>("chrono");
   const [query, setQuery] = useState("");
   const [watched, setWatched] = useState<Set<string>>(() => loadSet(WATCHED_KEY));
-  const [watchedChrono, setWatchedChrono] = useState<Set<number>>(() => loadSet(WATCHED_CHRONO_KEY));
-  const [watchedSemi, setWatchedSemi] = useState<Set<number>>(() => loadSet(WATCHED_SEMI_KEY));
+  const [watchedChrono, setWatchedChrono] = useState<Set<string>>(() => loadSet(WATCHED_CHRONO_KEY));
+  const [watchedSemi, setWatchedSemi] = useState<Set<string>>(() => loadSet(WATCHED_SEMI_KEY));
+  const [showResetNotice, setShowResetNotice] = useState(watchedWasReset);
   const [filtersOpen, setFiltersOpen] = useState<boolean>(() => {
     try {
       return localStorage.getItem(FILTERS_KEY) !== "closed"; // default open
@@ -105,18 +131,18 @@ export default function App() {
     });
   }, []);
   const onToggleOrder = useCallback((key: string | number) => {
-    const o = Number(key);
+    const k = String(key);
     setWatchedChrono((prev) => {
       const next = new Set(prev);
-      next.has(o) ? next.delete(o) : next.add(o);
+      next.has(k) ? next.delete(k) : next.add(k);
       return next;
     });
   }, []);
   const onToggleSemi = useCallback((key: string | number) => {
-    const o = Number(key);
+    const k = String(key);
     setWatchedSemi((prev) => {
       const next = new Set(prev);
-      next.has(o) ? next.delete(o) : next.add(o);
+      next.has(k) ? next.delete(k) : next.add(k);
       return next;
     });
   }, []);
@@ -242,18 +268,21 @@ export default function App() {
         ) : (
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
             {usesUnits
-              ? units.map((u) => (
-                  <EntryCard
-                    key={u.order}
-                    item={u.item}
-                    index={u.order - 1}
-                    watched={unitWatched.has(u.order)}
-                    toggleKey={u.order}
-                    onToggle={unitToggle}
-                    runSeason={u.season}
-                    runEps={u.eps}
-                  />
-                ))
+              ? units.map((u) => {
+                  const k = unitKey(u);
+                  return (
+                    <EntryCard
+                      key={u.order}
+                      item={u.item}
+                      index={u.order - 1}
+                      watched={unitWatched.has(k)}
+                      toggleKey={k}
+                      onToggle={unitToggle}
+                      runSeason={u.season}
+                      runEps={u.eps}
+                    />
+                  );
+                })
               : whole.map((item, i) => (
                   <EntryCard
                     key={`${item.category}/${item.id}`}
@@ -313,6 +342,32 @@ export default function App() {
           </p>
         </div>
       </footer>
+
+      {showResetNotice && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4 backdrop-blur-sm"
+          onClick={() => setShowResetNotice(false)}
+        >
+          <div
+            className="w-full max-w-sm rounded-2xl border border-white/10 bg-zinc-900 p-6 shadow-xl shadow-black/50"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2 className="text-base font-semibold text-zinc-50">Watch progress reset</h2>
+            <p className="mt-2 text-sm leading-relaxed text-zinc-400">
+              The watch-order data changed, so your In-universe and Semi-chrono progress was
+              cleared. Release-order progress is untouched — and thanks to a saving change, this
+              won’t happen again.
+            </p>
+            <button
+              type="button"
+              onClick={() => setShowResetNotice(false)}
+              className="mt-5 w-full rounded-full border border-white/10 bg-white/10 px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-white/15 active:scale-[0.98]"
+            >
+              Got it
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
