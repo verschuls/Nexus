@@ -90,15 +90,14 @@ export function itemsByCategory(c: Category): Item[] {
 
 // In-universe chronological rank per show, from chrono.json.
 // chrono ids are either a flat slug ("gotg") or "slug:season" for interleaved
-// series runs, and a series recurs across many orders — so rank each show by the
-// FIRST (lowest) order any of its entries appears at. Keyed by the base slug
-// (before ":") so a series file id like "aos" resolves against "aos:2" etc.
+// series runs, and a series recurs many times — so rank each show by its FIRST
+// appearance. The file's array order IS the watch order, so the first hit while
+// iterating is already the earliest. Keyed by the base slug (before ":") so a
+// series file id like "aos" resolves against "aos:2" etc.
 const chronoIndex: Record<string, number> = {};
-(chronoRaw as { order: number; id: string }[]).forEach((e) => {
+(chronoRaw as { id: string }[]).forEach((e, i) => {
   const base = e.id.split(":")[0];
-  if (chronoIndex[base] === undefined || e.order < chronoIndex[base]) {
-    chronoIndex[base] = e.order;
-  }
+  if (chronoIndex[base] === undefined) chronoIndex[base] = i;
 });
 
 function chronoRank(id: string): number {
@@ -119,14 +118,16 @@ export function totalEpisodes(entry: Entry): number {
 }
 
 // ---------------------------------------------------------------------------
-// Watch-order timelines: one row per entry.
+// Watch-order timelines: one row per entry, IN FILE ORDER — the position of an
+// entry in chrono.json / semi-chrono.json is its watch order, so entries carry
+// no `order` field. Insert a row where it belongs and you're done; numbering is
+// derived here and can never drift, gap, or collide.
 //   - `id: "slug"`          → flat film / short / one-shot (whole item)
 //   - `id: "slug:season"`   → a season run; with `eps` it shows only those
 //                             episodes, WITHOUT `eps` it shows the whole season.
-// Used by both chrono.json (episode-interleaved) and semi-chrono.json (collapsed).
 // ---------------------------------------------------------------------------
 export interface TimelineUnit {
-  order: number;
+  order: number; // 1-based position after orphans are dropped (display only)
   item: Item;
   season?: string; // set for a series run
   eps?: Episode[]; // the episodes shown for this run (whole season if unspecified)
@@ -137,9 +138,11 @@ items.forEach((it) => {
   bySlug[it.id] = it;
 });
 
-function buildTimeline(raw: { order: number; id: string; eps?: number[] }[]): TimelineUnit[] {
+type TimelineRow = { id: string; eps?: number[] };
+
+function buildTimeline(raw: TimelineRow[]): TimelineUnit[] {
   return raw
-    .map((e): TimelineUnit | null => {
+    .map((e): Omit<TimelineUnit, "order"> | null => {
       const [slug, season] = e.id.split(":");
       const item = bySlug[slug];
       if (!item) return null; // orphan id — skip rather than crash
@@ -147,19 +150,21 @@ function buildTimeline(raw: { order: number; id: string; eps?: number[] }[]): Ti
         const all = item.data.seasons[season];
         const picked = e.eps ? new Set(e.eps) : null;
         const eps = picked ? all.filter((ep) => picked.has(ep.id)) : all;
-        return { order: e.order, item, season, eps };
+        return { item, season, eps };
       }
-      return { order: e.order, item }; // flat film/short/one-shot or whole-series ref
+      return { item }; // flat film/short/one-shot or whole-series ref
     })
-    .filter((u): u is TimelineUnit => u !== null);
+    .filter((u): u is Omit<TimelineUnit, "order"> => u !== null)
+    // Number after orphan removal so the visible sequence is always 1..N.
+    .map((u, i) => ({ ...u, order: i + 1 }));
 }
 
-export const timeline = buildTimeline(chronoRaw as { order: number; id: string; eps?: number[] }[]);
-export const timelineSemi = buildTimeline(semiRaw as { order: number; id: string; eps?: number[] }[]);
+export const timeline = buildTimeline(chronoRaw as TimelineRow[]);
+export const timelineSemi = buildTimeline(semiRaw as TimelineRow[]);
 
 /** Stable per-unit key for watched persistence — derived from content
- * (slug:season:episodes), NOT the volatile `order`, so renumbering the
- * timelines never invalidates saved progress. */
+ * (slug:season:episodes), NOT the positional `order`, so inserting or moving
+ * timeline rows never invalidates saved progress. */
 export function unitKey(u: TimelineUnit): string {
   return `${u.item.id}:${u.season ?? ""}:${u.eps?.map((e) => e.id).join(".") ?? ""}`;
 }

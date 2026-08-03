@@ -19,7 +19,7 @@ Personal MCU catalog built for one thing: figuring out **what to watch next**. R
 ## Features
 
 - **Three orderings** - *In-universe* (episode-interleaved, faithful to the wiki), *Semi-chrono* (collapsed to cut the constant show-hopping), and *Release date*.
-- **Filters** - stack by medium (Movies / Series / One-Shots / Shorts) and tier (Essential -> Completionist), with live counts.
+- **Filters** - stack by medium (Movies / Series / One-Shots / Shorts) and tier (Essential -> Legacy), with live counts.
 - **Canon flags** - Alternate Universe, Unconfirmed / Dubious / Inspired / Non-Canon, and time-travel, colour-coded per entry.
 - **Watch tracking** - click a card to mark it; progress persists per ordering in `localStorage`.
 - **Fast** - content-visibility rendering + memoised cards keep hundreds of entries smooth.
@@ -29,7 +29,23 @@ Personal MCU catalog built for one thing: figuring out **what to watch next**. R
 
 ## Stack
 
-React 19 + TypeScript (strict) · Vite 8 · Tailwind CSS v4. No router, no state library.
+React 19 + TypeScript (strict) · Vite 8 · Tailwind CSS v4. No router, no state library, no component library - the icons are inline SVGs and the animations are plain CSS.
+
+## Data
+
+Everything lives in `src/data/`. There is no manifest - a glob import picks the files up at build time.
+
+**Entries** - one JSON file per title under `movies/`, `series/`, `oneshots/`, or `shorts/`. The filename is the id, so `movies/gotg.json` is `gotg`. Series carry a `seasons` map of episodes; everything else is flat with a `runtimeMinutes`.
+
+**Watch order** - `chrono.json` (episode-interleaved) and `semi-chrono.json` (collapsed). **A row's position in the array is its order**, so there is no `order` field to maintain - drop a row where it belongs and you are done. Three row shapes:
+
+```jsonc
+{ "id": "gotg" }                        // a film, short, one-shot, or a whole series
+{ "id": "aos:2" }                       // all of season 2
+{ "id": "aos:2", "eps": [4, 5, 6] }     // just those episodes of season 2
+```
+
+A series can appear as many times as the timeline needs; that is how episodes interleave with films. Progress is stored against an entry's contents rather than its position, so reordering the timeline never wipes anyone's watch history.
 
 ## Getting started
 
