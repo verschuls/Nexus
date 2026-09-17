@@ -14,8 +14,7 @@ export const MEDIUM_ICON: Record<Category, FC<IconProps>> = {
 };
 
 export const SORTS: { key: SortMode; label: string }[] = [
-  { key: "chrono", label: "In-universe" },
-  { key: "semi", label: "Semi-chrono" },
+  { key: "chrono", label: "Chronological" },
   { key: "release", label: "Release" },
 ];
 

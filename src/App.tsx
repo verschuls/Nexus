@@ -1,11 +1,5 @@
 import { useCallback, useDeferredValue, useEffect, useMemo, useRef, useState } from "react";
-import {
-  allItems,
-  items as ALL_ITEMS,
-  timeline,
-  timelineSemi,
-  unitKey,
-} from "./data";
+import { items as ALL_ITEMS, timeline, unitKey } from "./data";
 import type { Category, SortMode } from "./data";
 import { EntryCard } from "./EntryCard";
 import { Header } from "./Header";
@@ -19,9 +13,15 @@ const TOTAL = ALL_ITEMS.length;
  * Watched state — persisted to localStorage, keyed by unique id
  * ------------------------------------------------------------------ */
 const WATCHED_KEY = "nexus:watched"; // release view — keyed by show id
-const WATCHED_CHRONO_KEY = "nexus:watched-chrono"; // in-universe view — keyed by chrono order
-const WATCHED_SEMI_KEY = "nexus:watched-semi"; // semi-chrono view — keyed by semi order
+// Chronological view — keyed by unitKey. The storage string is deliberately still
+// the old "-semi" one: this order WAS semi-chrono before the rename, so reusing
+// the key carries existing progress over instead of orphaning it.
+const WATCHED_ORDER_KEY = "nexus:watched-semi";
+const DEAD_CHRONO_KEY = "nexus:watched-chrono"; // retired in-universe order — cleared on load
 const FILTERS_KEY = "nexus:filters-open"; // filter panel open/closed, remembered across reloads
+const MEDIUMS_KEY = "nexus:mediums"; // selected medium filters
+const TIERS_KEY = "nexus:tiers"; // selected tier filters
+const SORT_KEY = "nexus:sort"; // selected ordering
 function loadSet<T extends string | number>(key: string): Set<T> {
   try {
     const raw = localStorage.getItem(key);
@@ -31,22 +31,40 @@ function loadSet<T extends string | number>(key: string): Set<T> {
   }
 }
 
-const SCHEMA_KEY = "nexus:schema"; // bumped when the watched key format changes
-const WATCHED_SCHEMA = 2; // v1 = chrono/semi keyed by `order` int; v2 = keyed by stable unitKey
+function save(key: string, value: string) {
+  try {
+    localStorage.setItem(key, value);
+  } catch {
+    /* ignore quota / private-mode errors */
+  }
+}
 
-// One-time migration: chrono/semi watched used to key off the volatile `order`
-// integer. v2 keys off a stable content signature (unitKey), so renumbering the
-// timelines no longer wipes progress — but the OLD saved sets are meaningless now,
-// so clear them once. Returns true only when real progress was actually discarded
+/** Only ever returns a SortMode that still exists — a retired one (the in-universe
+ * order, dropped 2026-09-16) must not come back to life out of an old session. */
+function loadSort(): SortMode {
+  try {
+    const raw = localStorage.getItem(SORT_KEY);
+    return raw === "release" || raw === "chrono" ? raw : "chrono";
+  } catch {
+    return "chrono";
+  }
+}
+
+const SCHEMA_KEY = "nexus:schema"; // bumped when the watched key format changes
+const WATCHED_SCHEMA = 2; // v1 = watch order keyed by `order` int; v2 = keyed by stable unitKey
+
+// Runs once on load. Always drops the retired in-universe set, and for v1
+// visitors also clears the watch-order set (it keyed off the volatile `order`
+// integer; v2 keys off the stable unitKey signature, so those values are
+// meaningless now). Returns true only when real progress was actually discarded
 // (so first-time visitors don't get the notice).
 function migrateWatchedSchema(): boolean {
   try {
+    localStorage.removeItem(DEAD_CHRONO_KEY);
     if (localStorage.getItem(SCHEMA_KEY) === String(WATCHED_SCHEMA)) return false;
-    const chrono = localStorage.getItem(WATCHED_CHRONO_KEY);
-    const semi = localStorage.getItem(WATCHED_SEMI_KEY);
-    const hadProgress = (!!chrono && chrono !== "[]") || (!!semi && semi !== "[]");
-    localStorage.removeItem(WATCHED_CHRONO_KEY);
-    localStorage.removeItem(WATCHED_SEMI_KEY);
+    const saved = localStorage.getItem(WATCHED_ORDER_KEY);
+    const hadProgress = !!saved && saved !== "[]";
+    localStorage.removeItem(WATCHED_ORDER_KEY);
     localStorage.setItem(SCHEMA_KEY, String(WATCHED_SCHEMA));
     return hadProgress;
   } catch {
@@ -56,13 +74,12 @@ function migrateWatchedSchema(): boolean {
 const watchedWasReset = migrateWatchedSchema();
 
 export default function App() {
-  const [mediums, setMediums] = useState<Set<Category>>(new Set());
-  const [tiers, setTiers] = useState<Set<string>>(new Set());
-  const [sort, setSort] = useState<SortMode>("chrono");
+  const [mediums, setMediums] = useState<Set<Category>>(() => loadSet(MEDIUMS_KEY));
+  const [tiers, setTiers] = useState<Set<string>>(() => loadSet(TIERS_KEY));
+  const [sort, setSort] = useState<SortMode>(loadSort);
   const [query, setQuery] = useState("");
   const [watched, setWatched] = useState<Set<string>>(() => loadSet(WATCHED_KEY));
-  const [watchedChrono, setWatchedChrono] = useState<Set<string>>(() => loadSet(WATCHED_CHRONO_KEY));
-  const [watchedSemi, setWatchedSemi] = useState<Set<string>>(() => loadSet(WATCHED_SEMI_KEY));
+  const [watchedOrder, setWatchedOrder] = useState<Set<string>>(() => loadSet(WATCHED_ORDER_KEY));
   const [showResetNotice, setShowResetNotice] = useState(watchedWasReset);
   const [filtersOpen, setFiltersOpen] = useState<boolean>(() => {
     try {
@@ -89,39 +106,17 @@ export default function App() {
     return () => document.removeEventListener("keydown", onKey);
   }, []);
 
-  useEffect(() => {
-    try {
-      localStorage.setItem(WATCHED_KEY, JSON.stringify([...watched]));
-    } catch {
-      /* ignore quota / private-mode errors */
-    }
-  }, [watched]);
-  useEffect(() => {
-    try {
-      localStorage.setItem(WATCHED_CHRONO_KEY, JSON.stringify([...watchedChrono]));
-    } catch {
-      /* ignore quota / private-mode errors */
-    }
-  }, [watchedChrono]);
-  useEffect(() => {
-    try {
-      localStorage.setItem(WATCHED_SEMI_KEY, JSON.stringify([...watchedSemi]));
-    } catch {
-      /* ignore quota / private-mode errors */
-    }
-  }, [watchedSemi]);
-  useEffect(() => {
-    try {
-      localStorage.setItem(FILTERS_KEY, filtersOpen ? "open" : "closed");
-    } catch {
-      /* ignore quota / private-mode errors */
-    }
-  }, [filtersOpen]);
+  useEffect(() => save(WATCHED_KEY, JSON.stringify([...watched])), [watched]);
+  useEffect(() => save(WATCHED_ORDER_KEY, JSON.stringify([...watchedOrder])), [watchedOrder]);
+  useEffect(() => save(FILTERS_KEY, filtersOpen ? "open" : "closed"), [filtersOpen]);
+  useEffect(() => save(MEDIUMS_KEY, JSON.stringify([...mediums])), [mediums]);
+  useEffect(() => save(TIERS_KEY, JSON.stringify([...tiers])), [tiers]);
+  useEffect(() => save(SORT_KEY, sort), [sort]);
 
   const toggleFilters = useCallback(() => setFiltersOpen((v) => !v), []);
 
   // Stable identities so memoized EntryCards don't re-render on every keystroke.
-  // Release view toggles by show id; in-universe view toggles by chrono order.
+  // Release view toggles by show id; chronological view toggles by unit key.
   const onToggle = useCallback((key: string | number) => {
     const id = String(key);
     setWatched((prev) => {
@@ -132,15 +127,7 @@ export default function App() {
   }, []);
   const onToggleOrder = useCallback((key: string | number) => {
     const k = String(key);
-    setWatchedChrono((prev) => {
-      const next = new Set(prev);
-      next.has(k) ? next.delete(k) : next.add(k);
-      return next;
-    });
-  }, []);
-  const onToggleSemi = useCallback((key: string | number) => {
-    const k = String(key);
-    setWatchedSemi((prev) => {
+    setWatchedOrder((prev) => {
       const next = new Set(prev);
       next.has(k) ? next.delete(k) : next.add(k);
       return next;
@@ -163,7 +150,7 @@ export default function App() {
   }, []);
   const clearTiers = useCallback(() => setTiers(new Set()), []);
 
-  const usesUnits = sort !== "release"; // chrono + semi render episode/season runs
+  const usesUnits = sort !== "release"; // chronological renders season/episode runs
   const allMediums = mediums.size === 0;
   const allTiers = tiers.size === 0;
 
@@ -172,7 +159,7 @@ export default function App() {
     const q = deferredQuery.trim().toLowerCase();
     const allM = mediums.size === 0;
     const allT = tiers.size === 0;
-    return allItems(sort).filter(
+    return ALL_ITEMS.filter(
       (it) =>
         (allM || mediums.has(it.category)) &&
         (allT || tiers.has(it.data.tier)) &&
@@ -181,16 +168,15 @@ export default function App() {
           it.data.description.toLowerCase().includes(q) ||
           it.id.toLowerCase().includes(q)),
     );
-  }, [sort, mediums, tiers, deferredQuery]);
+  }, [mediums, tiers, deferredQuery]);
 
-  // Watch-order rows: chrono (episode-interleaved) or semi-chrono (collapsed).
+  // Watch-order rows: the chronological timeline.
   const units = useMemo(() => {
-    const src = sort === "chrono" ? timeline : sort === "semi" ? timelineSemi : null;
-    if (!src) return [];
+    if (sort === "release") return [];
     const q = deferredQuery.trim().toLowerCase();
     const allM = mediums.size === 0;
     const allT = tiers.size === 0;
-    return src.filter(
+    return timeline.filter(
       (u) =>
         (allM || mediums.has(u.item.category)) &&
         (allT || tiers.has(u.item.data.tier)) &&
@@ -205,15 +191,9 @@ export default function App() {
   const count = usesUnits ? units.length : whole.length;
   const isEmpty = count === 0;
 
-  // Watched is tracked per order in chrono/semi, per show id in release.
-  const unitWatched = sort === "semi" ? watchedSemi : watchedChrono;
-  const unitToggle = sort === "semi" ? onToggleSemi : onToggleOrder;
-  const watchedNum = usesUnits ? unitWatched.size : watched.size;
-  const totalNum = usesUnits
-    ? sort === "semi"
-      ? timelineSemi.length
-      : timeline.length
-    : TOTAL;
+  // Watched is tracked per timeline unit in chronological, per show id in release.
+  const watchedNum = usesUnits ? watchedOrder.size : watched.size;
+  const totalNum = usesUnits ? timeline.length : TOTAL;
 
   const watchPct = totalNum ? Math.round((watchedNum / totalNum) * 100) : 0;
 
@@ -275,9 +255,9 @@ export default function App() {
                       key={u.order}
                       item={u.item}
                       index={u.order - 1}
-                      watched={unitWatched.has(k)}
+                      watched={watchedOrder.has(k)}
                       toggleKey={k}
-                      onToggle={unitToggle}
+                      onToggle={onToggleOrder}
                       runSeason={u.season}
                       runEps={u.eps}
                     />
@@ -300,11 +280,7 @@ export default function App() {
       <footer className="mx-auto max-w-350 px-5 pb-12 pt-4">
         <p className="text-center font-mono text-[11px] text-zinc-700">
           {count} {count === 1 ? "entry" : "entries"} ·{" "}
-          {sort === "chrono"
-            ? "in-universe watch order"
-            : sort === "semi"
-              ? "semi-chronological order"
-              : "release order"}
+          {sort === "chrono" ? "chronological order" : "release order"}
         </p>
 
         <div className="mx-auto my-6 h-px w-16 bg-linear-to-r from-transparent via-white/15 to-transparent" />
@@ -354,8 +330,8 @@ export default function App() {
           >
             <h2 className="text-base font-semibold text-zinc-50">Watch progress reset</h2>
             <p className="mt-2 text-sm leading-relaxed text-zinc-400">
-              The watch-order data changed, so your In-universe and Semi-chrono progress was
-              cleared. Release-order progress is untouched — and thanks to a saving change, this
+              The watch-order data changed, so your chronological progress was cleared.
+              Release-order progress is untouched — and thanks to a saving change, this
               won’t happen again.
             </p>
             <button

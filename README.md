@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  A fan-made viewer for watching the Marvel Cinematic Universe in in-universe order - films, series, one-shots, shorts, and web series woven into one timeline.
+  A fan-made viewer for watching the Marvel Cinematic Universe in chronological order - films, series, one-shots, shorts, and web series woven into one timeline.
 </p>
 
 <p align="center">
@@ -18,14 +18,14 @@ Personal MCU catalog built for one thing: figuring out **what to watch next**. R
 
 ## Features
 
-- **Three orderings** - *In-universe* (episode-interleaved, faithful to the wiki), *Semi-chrono* (collapsed to cut the constant show-hopping), and *Release date*.
+- **Two orderings** - *Chronological* (collapsed to cut the constant show-hopping) and *Release date*.
 - **Filters** - stack by medium (Movies / Series / One-Shots / Shorts) and tier (Essential -> Legacy), with live counts.
 - **Canon flags** - Alternate Universe, Unconfirmed / Dubious / Inspired / Non-Canon, and time-travel, colour-coded per entry.
 - **Watch tracking** - click a card to mark it; progress persists per ordering in `localStorage`.
 - **Fast** - content-visibility rendering + memoised cards keep hundreds of entries smooth.
 - **Data-driven** - every entry is a small JSON file; the catalog rebuilds itself from the folder.
 
-> **Note:** *Semi-chrono* is a work in progress, it was a bit of a speedrun, so the ordering may not be perfectly balanced yet.
+> **Note:** the *Chronological* order is a work in progress, so the ordering may not be perfectly balanced yet.
 
 ## Stack
 
@@ -37,7 +37,7 @@ Everything lives in `src/data/`. There is no manifest - a glob import picks the 
 
 **Entries** - one JSON file per title under `movies/`, `series/`, `oneshots/`, or `shorts/`. The filename is the id, so `movies/gotg.json` is `gotg`. Series carry a `seasons` map of episodes; everything else is flat with a `runtimeMinutes`.
 
-**Watch order** - `chrono.json` (episode-interleaved) and `semi-chrono.json` (collapsed). **A row's position in the array is its order**, so there is no `order` field to maintain - drop a row where it belongs and you are done. Three row shapes:
+**Watch order** - `chrono.json`. **A row's position in the array is its order**, so there is no `order` field to maintain - drop a row where it belongs and you are done. Three row shapes:
 
 ```jsonc
 { "id": "gotg" }                        // a film, short, one-shot, or a whole series

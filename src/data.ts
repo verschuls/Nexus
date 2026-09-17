@@ -2,10 +2,9 @@
 // so the catalog stays in sync with the JSON files with zero manual manifest.
 
 import chronoRaw from "./data/chrono.json";
-import semiRaw from "./data/semi-chrono.json";
 
 export type Category = "movies" | "series" | "oneshots" | "shorts";
-export type SortMode = "chrono" | "semi" | "release";
+export type SortMode = "chrono" | "release";
 
 export interface BaseEntry {
   title: string;
@@ -88,38 +87,14 @@ export function itemsByCategory(c: Category): Item[] {
   return items.filter((it) => it.category === c);
 }
 
-// In-universe chronological rank per show, from chrono.json.
-// chrono ids are either a flat slug ("gotg") or "slug:season" for interleaved
-// series runs, and a series recurs many times — so rank each show by its FIRST
-// appearance. The file's array order IS the watch order, so the first hit while
-// iterating is already the earliest. Keyed by the base slug (before ":") so a
-// series file id like "aos" resolves against "aos:2" etc.
-const chronoIndex: Record<string, number> = {};
-(chronoRaw as { id: string }[]).forEach((e, i) => {
-  const base = e.id.split(":")[0];
-  if (chronoIndex[base] === undefined) chronoIndex[base] = i;
-});
-
-function chronoRank(id: string): number {
-  return chronoIndex[id] ?? Number.MAX_SAFE_INTEGER;
-}
-
-// Precomputed orderings. `items` is already release-sorted, so release reuses it.
-const itemsChrono: Item[] = [...items].sort(
-  (a, b) => chronoRank(a.id) - chronoRank(b.id),
-);
-export function allItems(sort: SortMode): Item[] {
-  return sort === "chrono" ? itemsChrono : items;
-}
-
 export function totalEpisodes(entry: Entry): number {
   if (!entry.seasons) return 0;
   return Object.values(entry.seasons).reduce((sum, eps) => sum + eps.length, 0);
 }
 
 // ---------------------------------------------------------------------------
-// Watch-order timelines: one row per entry, IN FILE ORDER — the position of an
-// entry in chrono.json / semi-chrono.json is its watch order, so entries carry
+// Watch-order timeline: one row per entry, IN FILE ORDER — the position of an
+// entry in chrono.json is its watch order, so entries carry
 // no `order` field. Insert a row where it belongs and you're done; numbering is
 // derived here and can never drift, gap, or collide.
 //   - `id: "slug"`          → flat film / short / one-shot (whole item)
@@ -160,7 +135,6 @@ function buildTimeline(raw: TimelineRow[]): TimelineUnit[] {
 }
 
 export const timeline = buildTimeline(chronoRaw as TimelineRow[]);
-export const timelineSemi = buildTimeline(semiRaw as TimelineRow[]);
 
 /** Stable per-unit key for watched persistence — derived from content
  * (slug:season:episodes), NOT the positional `order`, so inserting or moving

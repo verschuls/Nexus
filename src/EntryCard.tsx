@@ -167,15 +167,15 @@ function Seasons({
 }
 
 /* ------------------------------------------------------------------ *
- * Entry card — memoized. In the Timeline a series appears once per chrono
- * run; `runSeason` + `runEps` restrict the accordion to just that run's
+ * Entry card — memoized. In the Timeline a series appears once per
+ * chronological run; `runSeason` + `runEps` restrict the accordion to just that run's
  * season and its cherry-picked episodes.
  * ------------------------------------------------------------------ */
 export interface EntryCardProps {
   item: Item;
   index: number;
   watched: boolean;
-  // Watched is keyed by show id (release view) or chrono order (in-universe view).
+  // Watched is keyed by show id (release view) or unit key (chronological view).
   toggleKey: string | number;
   onToggle: (key: string | number) => void;
   runSeason?: string;
