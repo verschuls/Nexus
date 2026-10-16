@@ -3,77 +3,63 @@
   "releaseDate": "27.01.2026",
   "inUniverseTime": "2026 - 2028",
   "tier": "recommended",
-  "state": "Reality",
+  "tags": [],
   "notes": "Marvel Spotlight series.",
   "description": "Actor Simon Williams enters a Hollywood superhero production while hiding powers of his own.",
   "runtimePerEp": 31,
-  "timetravel": false,
   "seasons": {
-    "1": [
-      {
-        "id": 1,
-        "title": "Matinee",
-        "releaseDate": "27.01.2026",
-        "inUniverseTime": "2026",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 2,
-        "title": "Self-Tape",
-        "releaseDate": "27.01.2026",
-        "inUniverseTime": "2026",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 3,
-        "title": "Pacoima",
-        "releaseDate": "27.01.2026",
-        "inUniverseTime": "2026",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 4,
-        "title": "Doorman",
-        "releaseDate": "27.01.2026",
-        "inUniverseTime": "2026",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 5,
-        "title": "Found Footage",
-        "releaseDate": "27.01.2026",
-        "inUniverseTime": "2026",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 6,
-        "title": "Callback",
-        "releaseDate": "27.01.2026",
-        "inUniverseTime": "2026",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 7,
-        "title": "Kathy Friedman",
-        "releaseDate": "27.01.2026",
-        "inUniverseTime": "2026",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 8,
-        "title": "Yucca Valley",
-        "releaseDate": "27.01.2026",
-        "inUniverseTime": "2026",
-        "timetravel": false,
-        "state": "Reality"
-      }
-    ]
+    "1": {
+      "inUniverseTime": "2026",
+      "episodes": [
+        {
+          "id": 1,
+          "title": "Matinee",
+          "releaseDate": "27.01.2026",
+          "inUniverseTime": "2026"
+        },
+        {
+          "id": 2,
+          "title": "Self-Tape",
+          "releaseDate": "27.01.2026",
+          "inUniverseTime": "2026"
+        },
+        {
+          "id": 3,
+          "title": "Pacoima",
+          "releaseDate": "27.01.2026",
+          "inUniverseTime": "2026"
+        },
+        {
+          "id": 4,
+          "title": "Doorman",
+          "releaseDate": "27.01.2026",
+          "inUniverseTime": "2026"
+        },
+        {
+          "id": 5,
+          "title": "Found Footage",
+          "releaseDate": "27.01.2026",
+          "inUniverseTime": "2026"
+        },
+        {
+          "id": 6,
+          "title": "Callback",
+          "releaseDate": "27.01.2026",
+          "inUniverseTime": "2026"
+        },
+        {
+          "id": 7,
+          "title": "Kathy Friedman",
+          "releaseDate": "27.01.2026",
+          "inUniverseTime": "2026"
+        },
+        {
+          "id": 8,
+          "title": "Yucca Valley",
+          "releaseDate": "27.01.2026",
+          "inUniverseTime": "2026"
+        }
+      ]
+    }
   }
 }

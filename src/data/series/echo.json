@@ -3,53 +3,45 @@
   "releaseDate": "09.01.2024",
   "inUniverseTime": "05.2025",
   "tier": "essential",
-  "state": "Reality",
+  "tags": [],
   "notes": "",
   "description": "Maya Lopez returns home and confronts her family, heritage, and Wilson Fisk.",
   "runtimePerEp": 40,
-  "timetravel": false,
   "seasons": {
-    "1": [
-      {
-        "id": 1,
-        "title": "Chafa",
-        "releaseDate": "09.01.2024",
-        "inUniverseTime": "05.2025",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 2,
-        "title": "Lowak",
-        "releaseDate": "09.01.2024",
-        "inUniverseTime": "05.2025",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 3,
-        "title": "Tuklo",
-        "releaseDate": "09.01.2024",
-        "inUniverseTime": "05.2025",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 4,
-        "title": "Taloa",
-        "releaseDate": "09.01.2024",
-        "inUniverseTime": "05.2025",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 5,
-        "title": "Maya",
-        "releaseDate": "09.01.2024",
-        "inUniverseTime": "05.2025",
-        "timetravel": false,
-        "state": "Reality"
-      }
-    ]
+    "1": {
+      "inUniverseTime": "05.2025",
+      "episodes": [
+        {
+          "id": 1,
+          "title": "Chafa",
+          "releaseDate": "09.01.2024",
+          "inUniverseTime": "05.2025"
+        },
+        {
+          "id": 2,
+          "title": "Lowak",
+          "releaseDate": "09.01.2024",
+          "inUniverseTime": "05.2025"
+        },
+        {
+          "id": 3,
+          "title": "Tuklo",
+          "releaseDate": "09.01.2024",
+          "inUniverseTime": "05.2025"
+        },
+        {
+          "id": 4,
+          "title": "Taloa",
+          "releaseDate": "09.01.2024",
+          "inUniverseTime": "05.2025"
+        },
+        {
+          "id": 5,
+          "title": "Maya",
+          "releaseDate": "09.01.2024",
+          "inUniverseTime": "05.2025"
+        }
+      ]
+    }
   }
 }

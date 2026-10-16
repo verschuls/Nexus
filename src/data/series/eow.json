@@ -3,45 +3,41 @@
   "releaseDate": "01.08.2025",
   "inUniverseTime": "Wakandan history",
   "tier": "optional",
-  "state": "Reality",
+  "tags": ["timetravel"],
   "notes": "Animated anthology across different historical periods.",
   "description": "Wakandan warriors recover dangerous vibranium artifacts across history.",
   "runtimePerEp": 31,
-  "timetravel": true,
   "seasons": {
-    "1": [
-      {
-        "id": 1,
-        "title": "Into the Lion's Den",
-        "releaseDate": "01.08.2025",
-        "inUniverseTime": "Wakandan history",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 2,
-        "title": "Legends and Lies",
-        "releaseDate": "01.08.2025",
-        "inUniverseTime": "Wakandan history",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 3,
-        "title": "Lost and Found",
-        "releaseDate": "01.08.2025",
-        "inUniverseTime": "Wakandan history",
-        "timetravel": false,
-        "state": "Reality"
-      },
-      {
-        "id": 4,
-        "title": "The Last Panther",
-        "releaseDate": "01.08.2025",
-        "inUniverseTime": "1896 / future branch",
-        "timetravel": true,
-        "state": "Alternate Universe"
-      }
-    ]
+    "1": {
+      "inUniverseTime": "Wakandan history - 1896 / future branch",
+      "tags": [],
+      "episodes": [
+        {
+          "id": 1,
+          "title": "Into the Lion's Den",
+          "releaseDate": "01.08.2025",
+          "inUniverseTime": "Wakandan history"
+        },
+        {
+          "id": 2,
+          "title": "Legends and Lies",
+          "releaseDate": "01.08.2025",
+          "inUniverseTime": "Wakandan history"
+        },
+        {
+          "id": 3,
+          "title": "Lost and Found",
+          "releaseDate": "01.08.2025",
+          "inUniverseTime": "Wakandan history"
+        },
+        {
+          "id": 4,
+          "title": "The Last Panther",
+          "releaseDate": "01.08.2025",
+          "inUniverseTime": "1896 / future branch",
+          "tags": ["alt", "timetravel"]
+        }
+      ]
+    }
   }
 }

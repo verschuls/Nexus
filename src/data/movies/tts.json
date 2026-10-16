@@ -4,8 +4,7 @@
   "runtimeMinutes": 126,
   "inUniverseTime": "Fall 2027",
   "tier": "essential",
-  "state": "Reality",
+  "tags": [],
   "notes": "",
-  "description": "A team of antiheroes is forced together for a dangerous mission.",
-  "timetravel": false
+  "description": "A team of antiheroes is forced together for a dangerous mission."
 }

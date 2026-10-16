@@ -16,6 +16,273 @@
 @theme {
   --font-sans: "sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-mono: "mono", ui-monospace, monospace;
+  --radius-card: 1rem;
+  --radius-control: 0.5rem;
+
+  /* Text ramp (from MonoGlass) */
+  --color-fg-1: oklch(0.97 0 0);
+  --color-fg-2: #a1a1a1;
+  --color-fg-3: #8a8a8a;
+}
+
+/* ------------------------------------------------------------------ *
+ * Glass materials, trimmed from MonoGlass to what Nexus uses. Keep them
+ * off repeated elements (cards): backdrop-filter + the fixed-attachment
+ * edge light repaint on every scroll frame.
+ *   .glass        panel        .glass-sheet  modal
+ *   .control      glass button .sunken       input
+ *   .edge         just the lit hairline
+ * ------------------------------------------------------------------ */
+:root {
+  color-scheme: dark;
+
+  --glass-fill: linear-gradient(to bottom, rgb(255 255 255 / 0.07), rgb(255 255 255 / 0.03));
+  --glass-blur: 24px;
+  --glass-edge: rgb(255 255 255 / 0.1);
+  --glass-shadow: inset 0 1px 0 rgb(255 255 255 / 0.12), inset 0 -1px 0 rgb(0 0 0 / 0.2), 0 16px 40px -12px rgb(0 0 0 / 0.6);
+
+  --float-fill: oklch(0.16 0 0 / 0.72);
+  --float-blur: 16px;
+  --float-edge: rgb(255 255 255 / 0.12);
+  --float-shadow: 0 16px 40px -12px rgb(0 0 0 / 0.6);
+
+  --sheet-fill: oklch(0.15 0 0 / 0.9);
+  --sheet-shadow: inset 0 1px 0 rgb(255 255 255 / 0.1), 0 25px 50px -12px rgb(0 0 0 / 0.8);
+  --scrim: oklch(0.12 0 0 / 0.7);
+
+  --control-fill: rgb(255 255 255 / 0.1);
+  --control-hover: rgb(255 255 255 / 0.16);
+  --control-active: rgb(255 255 255 / 0.13);
+  --control-edge: rgb(255 255 255 / 0.18);
+  --field-fill: rgb(255 255 255 / 0.05);
+  --field-edge: rgb(255 255 255 / 0.12);
+  --field-edge-focus: rgb(255 255 255 / 0.35);
+
+  --solid-fill: oklch(0.17 0 0);
+
+  /* Cursor light caught by edges; useGlassLight() moves it */
+  --specular: rgb(255 255 255 / 0.45);
+  --light-x: 50vw;
+  --light-y: -200px;
+}
+
+@layer base {
+  :focus-visible {
+    outline: 2px solid rgb(255 255 255 / 0.6);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+}
+
+@layer components {
+  .glass,
+  .glass-sheet,
+  .control,
+  .sunken,
+  .edge {
+    position: relative;
+  }
+  .edge {
+    --edge: var(--control-edge);
+  }
+  .glass {
+    --edge: var(--glass-edge);
+    background: var(--glass-fill);
+    -webkit-backdrop-filter: blur(var(--glass-blur)) saturate(120%);
+    backdrop-filter: blur(var(--glass-blur)) saturate(120%);
+    box-shadow: var(--glass-shadow);
+  }
+  .glass-sheet {
+    --edge: var(--float-edge);
+    background: var(--sheet-fill);
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    backdrop-filter: blur(var(--glass-blur));
+    box-shadow: var(--sheet-shadow);
+  }
+  .control {
+    --edge: var(--control-edge);
+    background: var(--control-fill);
+  }
+  @media (hover: hover) {
+    .control:hover:not(:disabled) {
+      background: var(--control-hover);
+    }
+  }
+  .control:active:not(:disabled),
+  .control[aria-pressed="true"] {
+    background: var(--control-active);
+  }
+  .sunken {
+    --edge: var(--field-edge);
+    background: var(--field-fill);
+  }
+
+  /* Hairline edge with a highlight that follows the cursor */
+  .glass::after,
+  .glass-sheet::after,
+  .control::after,
+  .sunken::after,
+  .edge::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 1px;
+    border-radius: inherit;
+    pointer-events: none;
+    background:
+      radial-gradient(160px circle at var(--light-x) var(--light-y), var(--specular), transparent 70%) fixed,
+      var(--edge);
+    mask:
+      linear-gradient(#000 0 0) content-box exclude,
+      linear-gradient(#000 0 0);
+  }
+
+  @media (prefers-reduced-transparency: reduce) {
+    .glass,
+    .glass-sheet {
+      background: var(--solid-fill);
+      -webkit-backdrop-filter: none;
+      backdrop-filter: none;
+    }
+  }
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+    .glass,
+    .glass-sheet {
+      background: var(--solid-fill);
+    }
+  }
+
+  /* Modal: CSS entrance (no exit animation; closing is instant) */
+  .modal[open] {
+    animation: modal-in 260ms cubic-bezier(0.22, 1, 0.36, 1);
+  }
+  .modal::backdrop {
+    background: var(--scrim);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    animation: fade-in 200ms ease;
+  }
+
+  /* Tooltip: data-tip="Text" on any element; data-tip-side="bottom" to flip. */
+  [data-tip] {
+    position: relative;
+  }
+  [data-tip]::before {
+    content: attr(data-tip);
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 8px);
+    z-index: 1;
+    translate: -50% 4px;
+    opacity: 0;
+    pointer-events: none;
+    padding: 6px 10px;
+    border: 1px solid var(--float-edge);
+    border-radius: var(--radius-control);
+    background: var(--float-fill);
+    -webkit-backdrop-filter: blur(var(--float-blur));
+    backdrop-filter: blur(var(--float-blur));
+    box-shadow: var(--float-shadow);
+    color: var(--color-fg-1);
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.3;
+    white-space: nowrap;
+    transition: opacity 150ms ease, translate 150ms ease;
+  }
+  [data-tip-side="bottom"]::before {
+    top: calc(100% + 8px);
+    bottom: auto;
+    translate: -50% -4px;
+  }
+  @media (hover: hover) {
+    [data-tip]:hover::before {
+      opacity: 1;
+      translate: -50% 0;
+      transition-delay: 300ms;
+    }
+  }
+  [data-tip]:focus-visible::before {
+    opacity: 1;
+    translate: -50% 0;
+  }
+
+  /* Scroll area without a scrollbar: an edge fades while there is more that way */
+  .scroll-fade {
+    scrollbar-width: none;
+  }
+  .scroll-fade::-webkit-scrollbar {
+    display: none;
+  }
+  @supports (animation-timeline: scroll()) {
+    .scroll-fade {
+      mask-image: linear-gradient(
+        to bottom,
+        transparent,
+        #000 var(--fade-top),
+        #000 calc(100% - var(--fade-bottom)),
+        transparent
+      );
+      animation:
+        fade-top linear both,
+        fade-bottom linear both;
+      animation-timeline: scroll(self), scroll(self);
+      animation-range:
+        0 28px,
+        calc(100% - 28px) 100%;
+    }
+  }
+}
+
+@property --fade-top {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@property --fade-bottom {
+  syntax: "<length>";
+  inherits: false;
+  initial-value: 0px;
+}
+@keyframes fade-top {
+  from {
+    --fade-top: 0px;
+  }
+  to {
+    --fade-top: 28px;
+  }
+}
+@keyframes fade-bottom {
+  from {
+    --fade-bottom: 28px;
+  }
+  to {
+    --fade-bottom: 0px;
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+  }
+}
+
+/* Keep the scrollbar's space when a modal locks scrolling, so nothing shifts. */
+html {
+  scrollbar-gutter: stable;
 }
 
 html,
@@ -39,7 +306,7 @@ body {
    while hundreds of cards mount cheaply. */
 .cv-card {
   content-visibility: auto;
-  contain-intrinsic-size: auto 360px;
+  contain-intrinsic-size: auto 330px;
 }
 
 /* Native <details> disclosure — hide the default marker triangle. */

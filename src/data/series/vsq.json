@@ -1,0 +1,65 @@
+{
+  "title": "VisionQuest",
+  "releaseDate": "13.10.2026",
+  "inUniverseTime": "2028",
+  "tier": "essential",
+  "tags": [],
+  "notes": "",
+  "description": "With a bounty on his head, Vision must confront his nature and resist Ultron's influence to survive.",
+  "runtimePerEp": 56,
+  "seasons": {
+    "1": {
+      "inUniverseTime": "2028",
+      "episodes": [
+        {
+          "id": 1,
+          "title": "No Strings",
+          "releaseDate": "13.10.2026",
+          "inUniverseTime": "2028"
+        },
+        {
+          "id": 2,
+          "title": "Theseus",
+          "releaseDate": "13.10.2026",
+          "inUniverseTime": "2028"
+        },
+        {
+          "id": 3,
+          "title": "Reboot",
+          "releaseDate": "20.10.2026",
+          "inUniverseTime": "2028"
+        },
+        {
+          "id": 4,
+          "title": "Malware",
+          "releaseDate": "20.10.2026",
+          "inUniverseTime": "2028"
+        },
+        {
+          "id": 5,
+          "title": "Firewall",
+          "releaseDate": "27.10.2026",
+          "inUniverseTime": "2028"
+        },
+        {
+          "id": 6,
+          "title": "Deadlock",
+          "releaseDate": "27.10.2026",
+          "inUniverseTime": "2028"
+        },
+        {
+          "id": 7,
+          "title": "Immolation",
+          "releaseDate": "03.11.2026",
+          "inUniverseTime": "2028"
+        },
+        {
+          "id": 8,
+          "title": "Forever",
+          "releaseDate": "10.11.2026",
+          "inUniverseTime": "2028"
+        }
+      ]
+    }
+  }
+}

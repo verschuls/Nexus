@@ -4,8 +4,8 @@
   "runtimeMinutes": 115,
   "inUniverseTime": "08.1964 - 12.1964",
   "tier": "essential",
-  "state": "Alternate Universe",
+  "tags": ["alt"],
   "notes": "",
-  "description": "The Fantastic Four defend their retro-futuristic world from Galactus.",
-  "timetravel": false
+  "earth": "828",
+  "description": "The Fantastic Four defend their retro-futuristic world from Galactus."
 }

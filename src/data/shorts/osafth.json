@@ -4,8 +4,7 @@
   "runtimeMinutes": 4,
   "inUniverseTime": "31.05.2010",
   "tier": "optional",
-  "state": "Reality",
+  "tags": [],
   "notes": "Concurrent with Thor.",
-  "description": "Phil Coulson handles a convenience store robbery while traveling to New Mexico.",
-  "timetravel": false
+  "description": "Phil Coulson handles a convenience store robbery while traveling to New Mexico."
 }

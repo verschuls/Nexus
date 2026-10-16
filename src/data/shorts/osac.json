@@ -4,8 +4,7 @@
   "runtimeMinutes": 15,
   "inUniverseTime": "15.03.1946 - 16.03.1946",
   "tier": "optional",
-  "state": "Reality",
+  "tags": [],
   "notes": "",
-  "description": "Peggy Carter takes action after being sidelined at the SSR.",
-  "timetravel": false
+  "description": "Peggy Carter takes action after being sidelined at the SSR."
 }

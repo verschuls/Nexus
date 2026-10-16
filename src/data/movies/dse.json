@@ -4,8 +4,7 @@
   "runtimeMinutes": 115,
   "inUniverseTime": "02.02.2016 - 02.2017",
   "tier": "essential",
-  "state": "Reality",
+  "tags": ["multiverse"],
   "notes": "",
-  "description": "Stephen Strange studies the mystic arts after a career-ending accident.",
-  "timetravel": true
+  "description": "Stephen Strange studies the mystic arts after a career-ending accident."
 }

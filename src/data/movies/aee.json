@@ -4,8 +4,7 @@
   "runtimeMinutes": 181,
   "inUniverseTime": "01.06.2018 - 10.2023",
   "tier": "essential",
-  "state": "Reality",
+  "tags": ["timetravel"],
   "notes": "",
-  "description": "The surviving Avengers attempt to reverse the Snap and confront Thanos one last time.",
-  "timetravel": true
+  "description": "The surviving Avengers attempt to reverse the Snap and confront Thanos one last time."
 }
