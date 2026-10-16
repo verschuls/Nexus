@@ -33,6 +33,20 @@ Personal MCU catalog built for one thing: figuring out **what to watch next**. R
 
 React 19 + TypeScript (strict) · Vite 8 · Tailwind CSS v4 · [Phosphor](https://phosphoricons.com) icons. No router, no state library, no component library - the glass look, modal and tooltips are a few local components plus plain CSS, and every animation is CSS.
 
+## Project layout
+
+```
+src/
+  App.tsx            wires state, filters and the list together
+  lib/               data types, catalog loading, the timeline, localStorage, tier/tag colours
+  hooks/             useMediaQuery, useGlassLight, usePersistentSet
+  components/
+    ui.tsx           Button, Modal
+    entry/           the card, the details modal and their parts
+    header/          desktop + mobile headers and their parts
+  data/              the JSON catalog (below)
+```
+
 ## Data
 
 Everything lives in `src/data/`. There is no manifest - a glob import picks the files up at build time.
@@ -59,7 +73,7 @@ Everything lives in `src/data/`. There is no manifest - a glob import picks the 
 "seasons": {
   "1": {
     "tier": "recommended",                       // optional, overrides the show tier for this season
-    "inUniverseTime": "09.2013 - 05.2014",     // optional, shown on the season's card
+    "inUniverseTime": "09.2013 - 05.2014",       // optional, shown on the season's card
     "tags": [],                                  // optional, overrides the show's tags
     "episodes": [
       { "id": 1, "title": "Pilot", "releaseDate": "24.09.2013", "inUniverseTime": "11.09.2013" }   // no tags: inherits the season's
@@ -68,7 +82,7 @@ Everything lives in `src/data/`. There is no manifest - a glob import picks the 
 }
 ```
 
-**Tags** - short keys: `alt`, `unconfirmed`, `inspired`, `dubious`, `noncanon` (no canon tag means Reality), `timetravel`, `multiverse`. Tags cascade show -> season -> episode: leave `tags` out of a season or episode to inherit its parent's, or write `[]` for explicitly none. `"inherit": false` on a season or episode stops it taking anything from its parent; on the show it turns the cascade off for every season and episode. So tag the show once and only override where a season or episode differs. Labels, colours and icons live in the `TAGS` map in `src/EntryCard.tsx`; an unknown key still shows, in grey.
+**Tags** - short keys: `alt`, `unconfirmed`, `inspired`, `dubious`, `noncanon` (no canon tag means Reality), `timetravel`, `multiverse`. Tags cascade show -> season -> episode: leave `tags` out of a season or episode to inherit its parent's, or write `[]` for explicitly none. `"inherit": false` on a season or episode stops it taking anything from its parent; on the show it turns the cascade off for every season and episode. So tag the show once and only override where a season or episode differs. Labels, colours and icons live in the `TAGS` map in `src/lib/meta.ts` (tier colours too); an unknown key still shows, in grey.
 
 **Watch order** - `chrono.json`. **A row's position in the array is its order**, so there is no `order` field to maintain - drop a row where it belongs and you are done. Two row shapes:
 

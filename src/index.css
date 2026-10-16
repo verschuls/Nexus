@@ -308,11 +308,3 @@ body {
   content-visibility: auto;
   contain-intrinsic-size: auto 330px;
 }
-
-/* Native <details> disclosure — hide the default marker triangle. */
-.disclosure > summary {
-  list-style: none;
-}
-.disclosure > summary::-webkit-details-marker {
-  display: none;
-}
